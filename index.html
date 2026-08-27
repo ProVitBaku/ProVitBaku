@@ -1,2512 +1,2423 @@
-<!DOCTYPE html>
-<html lang="az">
+<!DOCTYPE html><html lang="az">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>ProVitBaku - Premium Online Supplement Store</title>
 
-    <title>ProVitBaku - Premium Online Supplement Store</title>
+<meta name="theme-color" content="#080808">
+<meta name="description" content="ProVitBaku - Protein, Creatine və Vitamin məhsulları. Bakı və rayonlara sürətli çatdırılma. WhatsApp ilə əlaqə.">
 
-    <meta name="theme-color" content="#080808">
-    <meta name="description" content="ProVitBaku - Protein, Creatine və Vitamin məhsulları. Bakı və rayonlara sürətli çatdırılma. WhatsApp ilə əlaqə.">
+<meta property="og:title" content="ProVitBaku - Premium Online Supplement Store">
+<meta property="og:description" content="Ən keyfiyyətli supplement məhsulları. Bakı və rayonlara sürətli çatdırılma. Sifariş üçün WhatsApp.">
+<meta property="og:image" content="https://provitbaku.pages.dev/logo.png">
+<meta property="og:url" content="https://provitbaku.pages.dev">
+<meta property="og:type" content="website">
 
-    <meta property="og:title" content="ProVitBaku - Premium Online Supplement Store">
-    <meta property="og:description" content="Ən keyfiyyətli supplement məhsulları. Bakı və rayonlara sürətli çatdırılma. Sifariş üçün WhatsApp.">
-    <meta property="og:image" content="https://provitbaku.pages.dev/logo.png">
-    <meta property="og:url" content="https://provitbaku.pages.dev">
-    <meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
 
-    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            -webkit-tap-highlight-color: transparent;
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background:
+            radial-gradient(circle at 50% -10%, rgba(212,175,55,.18), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(212,175,55,.06), transparent 35%),
+            #050505;
+
+        color: #fff;
+        min-height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 15px;
+
+        overflow-x: hidden;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+
+        width: 500px;
+        height: 500px;
+
+        top: -250px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        background: radial-gradient(
+            circle,
+            rgba(212,175,55,.08),
+            transparent 70%
+        );
+
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .phone-container {
+
+        width: 100%;
+        max-width: 440px;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(25,25,25,.97),
+                rgba(8,8,8,.98)
+            );
+
+        border: 1px solid rgba(212,175,55,.35);
+
+        border-radius: 30px;
+
+        padding: 26px 15px;
+
+        position: relative;
+
+        overflow: hidden;
+
+        box-shadow:
+            0 25px 70px rgba(0,0,0,.85),
+            0 0 35px rgba(212,175,55,.08);
+
+        backdrop-filter: blur(18px);
+
+        animation: pageIn .7s ease;
+    }
+
+    @keyframes pageIn {
+
+        from {
+            opacity: 0;
+            transform: translateY(25px) scale(.98);
         }
 
-        html {
-            scroll-behavior: smooth;
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    .phone-container::before {
+
+        content: "";
+
+        position: absolute;
+
+        top: 0;
+        left: 10%;
+
+        width: 80%;
+        height: 1px;
+
+        background: linear-gradient(
+            90deg,
+            transparent,
+            #d4af37,
+            transparent
+        );
+
+        opacity: .8;
+    }
+
+    .header-section {
+
+        text-align: center;
+
+        margin-bottom: 22px;
+    }
+
+    .logo-wrapper {
+
+        width: 94px;
+        height: 94px;
+
+        margin: 0 auto 13px;
+
+        padding: 3px;
+
+        border-radius: 50%;
+
+        background:
+            linear-gradient(
+                135deg,
+                #f4d46a,
+                #d4af37,
+                #80631e,
+                #d4af37
+            );
+
+        box-shadow:
+            0 0 20px rgba(212,175,55,.3),
+            0 0 50px rgba(212,175,55,.08);
+
+        animation: logoGlow 3s infinite ease-in-out;
+    }
+
+    @keyframes logoGlow {
+
+        0%,100% {
+            box-shadow:
+                0 0 18px rgba(212,175,55,.25);
         }
 
-        body {
-            background:
-                radial-gradient(circle at 50% -10%, rgba(212,175,55,.18), transparent 40%),
-                radial-gradient(circle at 0% 100%, rgba(212,175,55,.06), transparent 35%),
-                #050505;
+        50% {
+            box-shadow:
+                0 0 28px rgba(212,175,55,.5);
+        }
+    }
 
-            color: #fff;
-            min-height: 100vh;
+    .logo-wrapper img {
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        width: 100%;
+        height: 100%;
 
-            padding: 15px;
+        object-fit: cover;
 
-            overflow-x: hidden;
+        border-radius: 50%;
+
+        display: block;
+
+        background: #000;
+
+        border: 2px solid #080808;
+    }
+
+    h1 {
+
+        font-size: 23px;
+
+        font-weight: 800;
+
+        letter-spacing: 1px;
+
+        margin-bottom: 5px;
+    }
+
+    h1 span {
+        color: #d4af37;
+    }
+
+    .badge-store {
+
+        display: inline-flex;
+
+        align-items: center;
+
+        gap: 6px;
+
+        background:
+            linear-gradient(
+                135deg,
+                rgba(212,175,55,.14),
+                rgba(212,175,55,.05)
+            );
+
+        color: #d4af37;
+
+        font-size: 9px;
+
+        font-weight: 800;
+
+        padding: 5px 12px;
+
+        border-radius: 20px;
+
+        border: 1px solid rgba(212,175,55,.3);
+
+        letter-spacing: 1.5px;
+
+        text-transform: uppercase;
+    }
+
+    .badge-store::before {
+
+        content: "";
+
+        width: 6px;
+        height: 6px;
+
+        border-radius: 50%;
+
+        background: #25d366;
+
+        box-shadow: 0 0 8px #25d366;
+    }
+
+    .search-box {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-bottom: 15px;
+    }
+
+    .search-box i {
+
+        position: absolute;
+
+        left: 14px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        color: #d4af37;
+
+        font-size: 14px;
+
+        pointer-events: none;
+    }
+
+    .search-box input {
+
+        width: 100%;
+
+        height: 46px;
+
+        padding: 0 42px;
+
+        border-radius: 13px;
+
+        border: 1px solid rgba(212,175,55,.25);
+
+        outline: none;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(30,30,30,.95),
+                rgba(15,15,15,.95)
+            );
+
+        color: #fff;
+
+        font-size: 11px;
+
+        font-weight: 600;
+
+        transition: .25s;
+    }
+
+    .search-box input::placeholder {
+        color: #777;
+    }
+
+    .search-box input:focus {
+
+        border-color: rgba(212,175,55,.75);
+
+        box-shadow:
+            0 0 18px rgba(212,175,55,.1);
+    }
+
+    .search-clear {
+
+        position: absolute;
+
+        right: 13px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        color: #777;
+
+        font-size: 14px;
+
+        cursor: pointer;
+
+        display: none;
+    }
+
+    .search-clear:hover {
+        color: #d4af37;
+    }
+
+    .search-results {
+
+        display: none;
+
+        margin-bottom: 18px;
+
+        animation: categoryIn .3s ease;
+    }
+
+    .search-results.active {
+        display: block;
+    }
+
+    .search-title {
+
+        font-size: 11px;
+
+        color: #d4af37;
+
+        font-weight: 800;
+
+        margin-bottom: 10px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 1px;
+
+        border-left: 3px solid #d4af37;
+
+        padding-left: 8px;
+    }
+
+    .search-product {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 10px;
+
+        padding: 9px;
+
+        margin-bottom: 9px;
+
+        border-radius: 14px;
+
+        border: 1px solid rgba(212,175,55,.25);
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(28,28,28,.98),
+                rgba(12,12,12,.98)
+            );
+
+        animation: categoryIn .3s ease;
+    }
+
+    .search-product-img {
+
+        width: 62px;
+        height: 62px;
+
+        flex-shrink: 0;
+
+        border-radius: 9px;
+
+        object-fit: cover;
+
+        background: #000;
+
+        border: 1px solid rgba(212,175,55,.3);
+
+        cursor: pointer;
+    }
+
+    .search-product-details {
+
+        flex: 1;
+
+        min-width: 0;
+    }
+
+    .search-product-name {
+
+        font-size: 11px;
+
+        font-weight: 800;
+
+        color: #fff;
+
+        margin-bottom: 4px;
+
+        line-height: 1.3;
+    }
+
+    .search-product-price {
+
+        font-size: 12px;
+
+        color: #d4af37;
+
+        font-weight: 800;
+
+        margin-bottom: 6px;
+    }
+
+    .search-buy-btn {
+
+        display: inline-flex;
+
+        align-items: center;
+
+        gap: 5px;
+
+        background:
+            linear-gradient(
+                135deg,
+                #25d366,
+                #1da853
+            );
+
+        color: #fff;
+
+        text-decoration: none;
+
+        font-size: 9px;
+
+        font-weight: 800;
+
+        padding: 6px 9px;
+
+        border-radius: 7px;
+    }
+
+    .search-empty {
+
+        text-align: center;
+
+        padding: 15px;
+
+        border: 1px dashed rgba(212,175,55,.3);
+
+        border-radius: 12px;
+
+        color: #888;
+
+        font-size: 10px;
+    }
+
+    .products-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(3,1fr);
+
+        gap: 8px;
+
+        margin-bottom: 20px;
+    }
+
+    .product-card {
+
+        position: relative;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(35,35,35,.85),
+                rgba(18,18,18,.8)
+            );
+
+        border: 1px solid rgba(255,255,255,.08);
+
+        border-radius: 15px;
+
+        padding: 14px 5px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        transition:
+            transform .25s ease,
+            border .25s ease,
+            box-shadow .25s ease,
+            background .25s ease;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        min-height: 78px;
+
+        overflow: hidden;
+    }
+
+    .product-card::before {
+
+        content: "";
+
+        position: absolute;
+
+        width: 70px;
+        height: 70px;
+
+        background: rgba(212,175,55,.08);
+
+        border-radius: 50%;
+
+        filter: blur(15px);
+
+        opacity: 0;
+
+        transition: .3s;
+    }
+
+    .product-card:hover::before,
+    .product-card.active::before {
+        opacity: 1;
+    }
+
+    .product-card:hover,
+    .product-card.active {
+
+        transform: translateY(-3px);
+
+        border-color: rgba(212,175,55,.7);
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(45,45,45,.95),
+                rgba(20,20,20,.95)
+            );
+
+        box-shadow:
+            0 8px 25px rgba(0,0,0,.45),
+            0 0 18px rgba(212,175,55,.12);
+    }
+
+    .product-card:active {
+        transform: scale(.96);
+    }
+
+    .product-card i {
+
+        position: relative;
+
+        font-size: 19px;
+
+        color: #d4af37;
+
+        margin-bottom: 7px;
+
+        transition: .3s;
+    }
+
+    .product-card:hover i,
+    .product-card.active i {
+
+        transform: scale(1.12);
+
+        filter:
+            drop-shadow(0 0 6px rgba(212,175,55,.5));
+    }
+
+    .product-card h4 {
+
+        position: relative;
+
+        font-size: 9px;
+
+        font-weight: 800;
+
+        color: #eee;
+
+        letter-spacing: .5px;
+    }
+
+    .category-section {
+
+        display: none;
+
+        margin-bottom: 15px;
+
+        animation: categoryIn .35s ease;
+    }
+
+    .category-section.active {
+        display: block;
+    }
+
+    @keyframes categoryIn {
+
+        from {
+            opacity: 0;
+            transform: translateY(12px);
         }
 
-        body::before {
-            content: "";
-            position: fixed;
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
-            width: 500px;
-            height: 500px;
+    .section-title {
 
-            top: -250px;
-            left: 50%;
+        font-size: 13px;
 
-            transform: translateX(-50%);
+        font-weight: 800;
 
-            background: radial-gradient(
+        color: #d4af37;
+
+        margin-bottom: 12px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 1px;
+
+        border-left: 3px solid #d4af37;
+
+        padding-left: 9px;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+    }
+
+    .back-text {
+
+        font-size: 9px;
+
+        color: #888;
+
+        cursor: pointer;
+
+        font-weight: 600;
+
+        transition: .2s;
+    }
+
+    .back-text:hover {
+        color: #fff;
+    }
+
+    .items-container {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        max-height: 300px;
+
+        overflow-y: auto;
+
+        padding-right: 3px;
+    }
+
+    .items-container::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .items-container::-webkit-scrollbar-thumb {
+
+        background:
+            linear-gradient(
+                #d4af37,
+                #80631e
+            );
+
+        border-radius: 5px;
+    }
+
+    .item-row {
+
+        position: relative;
+
+        display: flex;
+
+        align-items: center;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(28,28,28,.95),
+                rgba(15,15,15,.95)
+            );
+
+        border: 1px solid rgba(255,255,255,.08);
+
+        border-radius: 15px;
+
+        padding: 10px;
+
+        gap: 12px;
+
+        transition:
+            transform .25s ease,
+            border .25s ease,
+            box-shadow .25s ease;
+    }
+
+    .item-row:hover {
+
+        transform: translateY(-2px);
+
+        border-color: rgba(212,175,55,.35);
+
+        box-shadow:
+            0 8px 20px rgba(0,0,0,.4);
+    }
+
+    .img-wrapper {
+
+        position: relative;
+
+        width: 80px;
+        height: 80px;
+
+        flex-shrink: 0;
+
+        cursor: pointer;
+
+        border-radius: 11px;
+
+        overflow: hidden;
+    }
+
+    .item-img {
+
+        width: 100%;
+        height: 100%;
+
+        border-radius: 10px;
+
+        object-fit: cover;
+
+        background: #000;
+
+        border: 1px solid rgba(212,175,55,.3);
+
+        transition:
+            transform .35s ease,
+            opacity .25s ease;
+    }
+
+    .img-wrapper:hover .item-img {
+
+        transform: scale(1.06);
+
+        opacity: .9;
+    }
+
+    .zoom-icon {
+
+        position: absolute;
+
+        bottom: 5px;
+        right: 5px;
+
+        background:
+            rgba(0,0,0,.75);
+
+        color: #d4af37;
+
+        font-size: 9px;
+
+        padding: 4px 5px;
+
+        border-radius: 5px;
+
+        pointer-events: none;
+
+        backdrop-filter: blur(5px);
+    }
+
+    .item-details {
+
+        flex-grow: 1;
+
+        min-width: 0;
+    }
+
+    .item-name {
+
+        font-size: 12px;
+
+        font-weight: 800;
+
+        color: #fff;
+
+        margin-bottom: 4px;
+
+        line-height: 1.35;
+    }
+
+    .item-price {
+
+        font-size: 13px;
+
+        color: #d4af37;
+
+        font-weight: 800;
+
+        margin-bottom: 7px;
+    }
+
+    .buy-btn {
+
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 6px;
+
+        background:
+            linear-gradient(
+                135deg,
+                #25d366,
+                #1da853
+            );
+
+        color: #fff;
+
+        text-decoration: none;
+
+        font-size: 10px;
+
+        font-weight: 800;
+
+        padding: 7px 12px;
+
+        border-radius: 8px;
+
+        transition:
+            transform .2s,
+            box-shadow .2s;
+    }
+
+    .buy-btn:hover {
+
+        transform: translateY(-1px);
+
+        box-shadow:
+            0 5px 14px rgba(37,211,102,.25);
+    }
+
+    .buy-btn:active {
+        transform: scale(.94);
+    }
+
+    .buy-btn i {
+        font-size: 12px;
+    }
+
+    .order-card {
+
+        position: relative;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(25,25,25,.98),
+                rgba(9,9,9,.98)
+            );
+
+        border: 1px solid rgba(212,175,55,.4);
+
+        border-radius: 19px;
+
+        padding: 17px 15px;
+
+        text-align: center;
+
+        box-shadow:
+            0 10px 30px rgba(0,0,0,.5);
+
+        margin-bottom: 15px;
+
+        margin-top: 15px;
+
+        overflow: hidden;
+    }
+
+    .order-card::before {
+
+        content: "";
+
+        position: absolute;
+
+        top: -60px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: 180px;
+        height: 120px;
+
+        background:
+            radial-gradient(
                 circle,
-                rgba(212,175,55,.08),
+                rgba(212,175,55,.13),
                 transparent 70%
             );
 
-            pointer-events: none;
-            z-index: -1;
+        pointer-events: none;
+    }
+
+    .order-card h3 {
+
+        position: relative;
+
+        font-size: 13px;
+
+        font-weight: 800;
+
+        margin-bottom: 5px;
+    }
+
+    .order-card p {
+
+        position: relative;
+
+        font-size: 10px;
+
+        color: #999;
+
+        margin-bottom: 12px;
+    }
+
+    .whatsapp-btn {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 8px;
+
+        background:
+            linear-gradient(
+                135deg,
+                #25d366,
+                #1da853
+            );
+
+        color: #fff;
+
+        text-decoration: none;
+
+        padding: 13px;
+
+        border-radius: 12px;
+
+        font-weight: 800;
+
+        font-size: 12px;
+
+        box-shadow:
+            0 5px 18px rgba(37,211,102,.22);
+
+        width: 100%;
+
+        transition:
+            transform .2s,
+            box-shadow .2s;
+    }
+
+    .whatsapp-btn:hover {
+
+        transform: translateY(-2px);
+
+        box-shadow:
+            0 8px 25px rgba(37,211,102,.32);
+    }
+
+    .whatsapp-btn:active {
+        transform: scale(.97);
+    }
+
+    .support-info {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
+
+        margin-top: 10px;
+
+        margin-bottom: 2px;
+    }
+
+    .support-box {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 6px;
+
+        min-height: 38px;
+
+        padding: 7px 5px;
+
+        border-radius: 10px;
+
+        background:
+            rgba(255,255,255,.025);
+
+        border: 1px solid rgba(255,255,255,.07);
+
+        color: #aaa;
+
+        font-size: 8px;
+
+        font-weight: 700;
+
+        text-align: center;
+    }
+
+    .support-box i {
+
+        color: #d4af37;
+
+        font-size: 12px;
+    }
+
+    .support-box.whatsapp-support i {
+        color: #25d366;
+    }
+
+    .store-info {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        font-size: 9px;
+
+        color: #777;
+
+        padding-top: 13px;
+
+        border-top:
+            1px solid rgba(255,255,255,.08);
+    }
+
+    .store-info span {
+
+        color: #d4af37;
+
+        font-weight: 700;
+    }
+
+    .footer-text {
+
+        text-align: center;
+
+        font-size: 8px;
+
+        color: #555;
+
+        margin-top: 11px;
+
+        letter-spacing: 1px;
+    }
+
+    .floating-whatsapp {
+
+        position: fixed;
+
+        right: 18px;
+        bottom: 18px;
+
+        width: 54px;
+        height: 54px;
+
+        border-radius: 50%;
+
+        background:
+            linear-gradient(
+                135deg,
+                #25d366,
+                #1da853
+            );
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        color: white;
+
+        text-decoration: none;
+
+        font-size: 25px;
+
+        box-shadow:
+            0 8px 25px rgba(37,211,102,.35);
+
+        z-index: 100;
+
+        animation: whatsappPulse 2s infinite;
+    }
+
+    @keyframes whatsappPulse {
+
+        0% {
+            box-shadow:
+                0 0 0 0 rgba(37,211,102,.35);
+        }
+
+        70% {
+            box-shadow:
+                0 0 0 13px rgba(37,211,102,0);
+        }
+
+        100% {
+            box-shadow:
+                0 0 0 0 rgba(37,211,102,0);
+        }
+    }
+
+    .modal {
+
+        display: none;
+
+        position: fixed;
+
+        z-index: 9999;
+
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background:
+            rgba(0,0,0,.94);
+
+        justify-content: center;
+
+        align-items: center;
+
+        padding: 20px;
+
+        backdrop-filter: blur(10px);
+
+        animation: modalIn .25s ease;
+    }
+
+    @keyframes modalIn {
+
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .modal img {
+
+        max-width: 95%;
+
+        max-height: 78vh;
+
+        border-radius: 15px;
+
+        border: 2px solid #d4af37;
+
+        box-shadow:
+            0 0 35px rgba(212,175,55,.35);
+
+        animation: imageIn .3s ease;
+    }
+
+    @keyframes imageIn {
+
+        from {
+            transform: scale(.9);
+            opacity: 0;
+        }
+
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .modal-close {
+
+        position: absolute;
+
+        top: 20px;
+        right: 20px;
+
+        color: #fff;
+
+        font-size: 27px;
+
+        cursor: pointer;
+
+        background:
+            rgba(255,255,255,.1);
+
+        width: 42px;
+        height: 42px;
+
+        border-radius: 50%;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        border:
+            1px solid rgba(255,255,255,.1);
+    }
+
+    @media (max-width: 480px) {
+
+        body {
+            padding: 8px;
+            align-items: flex-start;
         }
 
         .phone-container {
 
-            width: 100%;
-            max-width: 440px;
+            margin-top: 5px;
 
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(25,25,25,.97),
-                    rgba(8,8,8,.98)
-                );
+            border-radius: 25px;
 
-            border: 1px solid rgba(212,175,55,.35);
+            padding: 23px 12px;
 
-            border-radius: 30px;
-
-            padding: 26px 15px;
-
-            position: relative;
-
-            overflow: hidden;
-
-            box-shadow:
-                0 25px 70px rgba(0,0,0,.85),
-                0 0 35px rgba(212,175,55,.08);
-
-            backdrop-filter: blur(18px);
-
-            animation: pageIn .7s ease;
-        }
-
-        @keyframes pageIn {
-
-            from {
-                opacity: 0;
-                transform: translateY(25px) scale(.98);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-
-        .phone-container::before {
-
-            content: "";
-
-            position: absolute;
-
-            top: 0;
-            left: 10%;
-
-            width: 80%;
-            height: 1px;
-
-            background: linear-gradient(
-                90deg,
-                transparent,
-                #d4af37,
-                transparent
-            );
-
-            opacity: .8;
-        }
-
-        .header-section {
-
-            text-align: center;
-
-            margin-bottom: 22px;
+            min-height:
+                calc(100vh - 18px);
         }
 
         .logo-wrapper {
 
-            width: 94px;
-            height: 94px;
-
-            margin: 0 auto 13px;
-
-            padding: 3px;
-
-            border-radius: 50%;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #f4d46a,
-                    #d4af37,
-                    #80631e,
-                    #d4af37
-                );
-
-            box-shadow:
-                0 0 20px rgba(212,175,55,.3),
-                0 0 50px rgba(212,175,55,.08);
-
-            animation: logoGlow 3s infinite ease-in-out;
-        }
-
-        @keyframes logoGlow {
-
-            0%,100% {
-                box-shadow:
-                    0 0 18px rgba(212,175,55,.25);
-            }
-
-            50% {
-                box-shadow:
-                    0 0 28px rgba(212,175,55,.5);
-            }
-        }
-
-        .logo-wrapper img {
-
-            width: 100%;
-            height: 100%;
-
-            object-fit: cover;
-
-            border-radius: 50%;
-
-            display: block;
-
-            background: #000;
-
-            border: 2px solid #080808;
+            width: 88px;
+            height: 88px;
         }
 
         h1 {
-
-            font-size: 23px;
-
-            font-weight: 800;
-
-            letter-spacing: 1px;
-
-            margin-bottom: 5px;
+            font-size: 21px;
         }
-
-        h1 span {
-            color: #d4af37;
-        }
-
-        .badge-store {
-
-            display: inline-flex;
-
-            align-items: center;
-
-            gap: 6px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(212,175,55,.14),
-                    rgba(212,175,55,.05)
-                );
-
-            color: #d4af37;
-
-            font-size: 9px;
-
-            font-weight: 800;
-
-            padding: 5px 12px;
-
-            border-radius: 20px;
-
-            border: 1px solid rgba(212,175,55,.3);
-
-            letter-spacing: 1.5px;
-
-            text-transform: uppercase;
-        }
-
-        .badge-store::before {
-
-            content: "";
-
-            width: 6px;
-            height: 6px;
-
-            border-radius: 50%;
-
-            background: #25d366;
-
-            box-shadow: 0 0 8px #25d366;
-        }
-
-        /* ================================
-           SEARCH
-        ================================= */
-
-        .search-box {
-
-            position: relative;
-
-            width: 100%;
-
-            margin-bottom: 15px;
-        }
-
-        .search-box i {
-
-            position: absolute;
-
-            left: 14px;
-            top: 50%;
-
-            transform: translateY(-50%);
-
-            color: #d4af37;
-
-            font-size: 14px;
-
-            pointer-events: none;
-        }
-
-        .search-box input {
-
-            width: 100%;
-
-            height: 46px;
-
-            padding: 0 42px;
-
-            border-radius: 13px;
-
-            border: 1px solid rgba(212,175,55,.25);
-
-            outline: none;
-
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(30,30,30,.95),
-                    rgba(15,15,15,.95)
-                );
-
-            color: #fff;
-
-            font-size: 11px;
-
-            font-weight: 600;
-
-            transition: .25s;
-        }
-
-        .search-box input::placeholder {
-            color: #777;
-        }
-
-        .search-box input:focus {
-
-            border-color: rgba(212,175,55,.75);
-
-            box-shadow:
-                0 0 18px rgba(212,175,55,.1);
-        }
-
-        .search-clear {
-
-            position: absolute;
-
-            right: 13px;
-            top: 50%;
-
-            transform: translateY(-50%);
-
-            color: #777;
-
-            font-size: 14px;
-
-            cursor: pointer;
-
-            display: none;
-        }
-
-        .search-clear:hover {
-            color: #d4af37;
-        }
-
-        .search-results {
-
-            display: none;
-
-            margin-bottom: 18px;
-
-            animation: categoryIn .3s ease;
-        }
-
-        .search-results.active {
-            display: block;
-        }
-
-        .search-title {
-
-            font-size: 11px;
-
-            color: #d4af37;
-
-            font-weight: 800;
-
-            margin-bottom: 10px;
-
-            text-transform: uppercase;
-
-            letter-spacing: 1px;
-
-            border-left: 3px solid #d4af37;
-
-            padding-left: 8px;
-        }
-
-        .search-product {
-
-            display: flex;
-
-            align-items: center;
-
-            gap: 10px;
-
-            padding: 9px;
-
-            margin-bottom: 9px;
-
-            border-radius: 14px;
-
-            border: 1px solid rgba(212,175,55,.25);
-
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(28,28,28,.98),
-                    rgba(12,12,12,.98)
-                );
-
-            animation: categoryIn .3s ease;
-        }
-
-        .search-product-img {
-
-            width: 62px;
-            height: 62px;
-
-            flex-shrink: 0;
-
-            border-radius: 9px;
-
-            object-fit: cover;
-
-            background: #000;
-
-            border: 1px solid rgba(212,175,55,.3);
-
-            cursor: pointer;
-        }
-
-        .search-product-details {
-
-            flex: 1;
-
-            min-width: 0;
-        }
-
-        .search-product-name {
-
-            font-size: 11px;
-
-            font-weight: 800;
-
-            color: #fff;
-
-            margin-bottom: 4px;
-
-            line-height: 1.3;
-        }
-
-        .search-product-price {
-
-            font-size: 12px;
-
-            color: #d4af37;
-
-            font-weight: 800;
-
-            margin-bottom: 6px;
-        }
-
-        .search-buy-btn {
-
-            display: inline-flex;
-
-            align-items: center;
-
-            gap: 5px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #25d366,
-                    #1da853
-                );
-
-            color: #fff;
-
-            text-decoration: none;
-
-            font-size: 9px;
-
-            font-weight: 800;
-
-            padding: 6px 9px;
-
-            border-radius: 7px;
-        }
-
-        .search-empty {
-
-            text-align: center;
-
-            padding: 15px;
-
-            border: 1px dashed rgba(212,175,55,.3);
-
-            border-radius: 12px;
-
-            color: #888;
-
-            font-size: 10px;
-        }
-
-        /* ================================
-           CATEGORY GRID
-        ================================= */
 
         .products-grid {
-
-            display: grid;
-
-            grid-template-columns: repeat(3,1fr);
-
-            gap: 8px;
-
-            margin-bottom: 20px;
+            gap: 7px;
         }
 
         .product-card {
-
-            position: relative;
-
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(35,35,35,.85),
-                    rgba(18,18,18,.8)
-                );
-
-            border: 1px solid rgba(255,255,255,.08);
-
-            border-radius: 15px;
-
-            padding: 14px 5px;
-
-            text-align: center;
-
-            cursor: pointer;
-
-            transition:
-                transform .25s ease,
-                border .25s ease,
-                box-shadow .25s ease,
-                background .25s ease;
-
-            display: flex;
-
-            flex-direction: column;
-
-            align-items: center;
-
-            justify-content: center;
-
-            min-height: 78px;
-
-            overflow: hidden;
-        }
-
-        .product-card::before {
-
-            content: "";
-
-            position: absolute;
-
-            width: 70px;
-            height: 70px;
-
-            background: rgba(212,175,55,.08);
-
-            border-radius: 50%;
-
-            filter: blur(15px);
-
-            opacity: 0;
-
-            transition: .3s;
-        }
-
-        .product-card:hover::before,
-        .product-card.active::before {
-            opacity: 1;
-        }
-
-        .product-card:hover,
-        .product-card.active {
-
-            transform: translateY(-3px);
-
-            border-color: rgba(212,175,55,.7);
-
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(45,45,45,.95),
-                    rgba(20,20,20,.95)
-                );
-
-            box-shadow:
-                0 8px 25px rgba(0,0,0,.45),
-                0 0 18px rgba(212,175,55,.12);
-        }
-
-        .product-card:active {
-            transform: scale(.96);
-        }
-
-        .product-card i {
-
-            position: relative;
-
-            font-size: 19px;
-
-            color: #d4af37;
-
-            margin-bottom: 7px;
-
-            transition: .3s;
-        }
-
-        .product-card:hover i,
-        .product-card.active i {
-
-            transform: scale(1.12);
-
-            filter:
-                drop-shadow(0 0 6px rgba(212,175,55,.5));
-        }
-
-        .product-card h4 {
-
-            position: relative;
-
-            font-size: 9px;
-
-            font-weight: 800;
-
-            color: #eee;
-
-            letter-spacing: .5px;
-        }
-
-        /* ================================
-           CATEGORY SECTION
-        ================================= */
-
-        .category-section {
-
-            display: none;
-
-            margin-bottom: 15px;
-
-            animation: categoryIn .35s ease;
-        }
-
-        .category-section.active {
-            display: block;
-        }
-
-        @keyframes categoryIn {
-
-            from {
-                opacity: 0;
-                transform: translateY(12px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .section-title {
-
-            font-size: 13px;
-
-            font-weight: 800;
-
-            color: #d4af37;
-
-            margin-bottom: 12px;
-
-            text-transform: uppercase;
-
-            letter-spacing: 1px;
-
-            border-left: 3px solid #d4af37;
-
-            padding-left: 9px;
-
-            display: flex;
-
-            justify-content: space-between;
-
-            align-items: center;
-        }
-
-        .back-text {
-
-            font-size: 9px;
-
-            color: #888;
-
-            cursor: pointer;
-
-            font-weight: 600;
-
-            transition: .2s;
-        }
-
-        .back-text:hover {
-            color: #fff;
-        }
-
-        .items-container {
-
-            display: flex;
-
-            flex-direction: column;
-
-            gap: 10px;
-
-            max-height: 300px;
-
-            overflow-y: auto;
-
-            padding-right: 3px;
-        }
-
-        .items-container::-webkit-scrollbar {
-            width: 3px;
-        }
-
-        .items-container::-webkit-scrollbar-thumb {
-
-            background:
-                linear-gradient(
-                    #d4af37,
-                    #80631e
-                );
-
-            border-radius: 5px;
+            min-height: 74px;
         }
 
         .item-row {
-
-            position: relative;
-
-            display: flex;
-
-            align-items: center;
-
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(28,28,28,.95),
-                    rgba(15,15,15,.95)
-                );
-
-            border: 1px solid rgba(255,255,255,.08);
-
-            border-radius: 15px;
-
-            padding: 10px;
-
-            gap: 12px;
-
-            transition:
-                transform .25s ease,
-                border .25s ease,
-                box-shadow .25s ease;
-        }
-
-        .item-row:hover {
-
-            transform: translateY(-2px);
-
-            border-color: rgba(212,175,55,.35);
-
-            box-shadow:
-                0 8px 20px rgba(0,0,0,.4);
+            padding: 9px;
+            gap: 10px;
         }
 
         .img-wrapper {
-
-            position: relative;
-
-            width: 80px;
-            height: 80px;
-
-            flex-shrink: 0;
-
-            cursor: pointer;
-
-            border-radius: 11px;
-
-            overflow: hidden;
-        }
-
-        .item-img {
-
-            width: 100%;
-            height: 100%;
-
-            border-radius: 10px;
-
-            object-fit: cover;
-
-            background: #000;
-
-            border: 1px solid rgba(212,175,55,.3);
-
-            transition:
-                transform .35s ease,
-                opacity .25s ease;
-        }
-
-        .img-wrapper:hover .item-img {
-
-            transform: scale(1.06);
-
-            opacity: .9;
-        }
-
-        .zoom-icon {
-
-            position: absolute;
-
-            bottom: 5px;
-            right: 5px;
-
-            background:
-                rgba(0,0,0,.75);
-
-            color: #d4af37;
-
-            font-size: 9px;
-
-            padding: 4px 5px;
-
-            border-radius: 5px;
-
-            pointer-events: none;
-
-            backdrop-filter: blur(5px);
-        }
-
-        .item-details {
-
-            flex-grow: 1;
-
-            min-width: 0;
+            width: 72px;
+            height: 72px;
         }
 
         .item-name {
-
-            font-size: 12px;
-
-            font-weight: 800;
-
-            color: #fff;
-
-            margin-bottom: 4px;
-
-            line-height: 1.35;
+            font-size: 11px;
         }
 
         .item-price {
-
-            font-size: 13px;
-
-            color: #d4af37;
-
-            font-weight: 800;
-
-            margin-bottom: 7px;
+            font-size: 12px;
         }
 
         .buy-btn {
-
-            display: inline-flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            gap: 6px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #25d366,
-                    #1da853
-                );
-
-            color: #fff;
-
-            text-decoration: none;
-
-            font-size: 10px;
-
-            font-weight: 800;
-
-            padding: 7px 12px;
-
-            border-radius: 8px;
-
-            transition:
-                transform .2s,
-                box-shadow .2s;
-        }
-
-        .buy-btn:hover {
-
-            transform: translateY(-1px);
-
-            box-shadow:
-                0 5px 14px rgba(37,211,102,.25);
-        }
-
-        .buy-btn:active {
-            transform: scale(.94);
-        }
-
-        .buy-btn i {
-            font-size: 12px;
-        }
-
-        .order-card {
-
-            position: relative;
-
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(25,25,25,.98),
-                    rgba(9,9,9,.98)
-                );
-
-            border: 1px solid rgba(212,175,55,.4);
-
-            border-radius: 19px;
-
-            padding: 17px 15px;
-
-            text-align: center;
-
-            box-shadow:
-                0 10px 30px rgba(0,0,0,.5);
-
-            margin-bottom: 15px;
-
-            margin-top: 15px;
-
-            overflow: hidden;
-        }
-
-        .order-card::before {
-
-            content: "";
-
-            position: absolute;
-
-            top: -60px;
-            left: 50%;
-
-            transform: translateX(-50%);
-
-            width: 180px;
-            height: 120px;
-
-            background:
-                radial-gradient(
-                    circle,
-                    rgba(212,175,55,.13),
-                    transparent 70%
-                );
-
-            pointer-events: none;
-        }
-
-        .order-card h3 {
-
-            position: relative;
-
-            font-size: 13px;
-
-            font-weight: 800;
-
-            margin-bottom: 5px;
-        }
-
-        .order-card p {
-
-            position: relative;
-
-            font-size: 10px;
-
-            color: #999;
-
-            margin-bottom: 12px;
-        }
-
-        .whatsapp-btn {
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            gap: 8px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #25d366,
-                    #1da853
-                );
-
-            color: #fff;
-
-            text-decoration: none;
-
-            padding: 13px;
-
-            border-radius: 12px;
-
-            font-weight: 800;
-
-            font-size: 12px;
-
-            box-shadow:
-                0 5px 18px rgba(37,211,102,.22);
-
-            width: 100%;
-
-            transition:
-                transform .2s,
-                box-shadow .2s;
-        }
-
-        .whatsapp-btn:hover {
-
-            transform: translateY(-2px);
-
-            box-shadow:
-                0 8px 25px rgba(37,211,102,.32);
-        }
-
-        .whatsapp-btn:active {
-            transform: scale(.97);
-        }
-
-        .support-info {
-
-            display: grid;
-
-            grid-template-columns: 1fr 1fr;
-
-            gap: 8px;
-
-            margin-top: 10px;
-
-            margin-bottom: 2px;
-        }
-
-        .support-box {
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            gap: 6px;
-
-            min-height: 38px;
-
-            padding: 7px 5px;
-
-            border-radius: 10px;
-
-            background:
-                rgba(255,255,255,.025);
-
-            border: 1px solid rgba(255,255,255,.07);
-
-            color: #aaa;
-
-            font-size: 8px;
-
-            font-weight: 700;
-
-            text-align: center;
-        }
-
-        .support-box i {
-
-            color: #d4af37;
-
-            font-size: 12px;
-        }
-
-        .support-box.whatsapp-support i {
-            color: #25d366;
-        }
-
-        .store-info {
-
-            display: flex;
-
-            justify-content: space-between;
-
-            align-items: center;
-
+            padding: 6px 10px;
             font-size: 9px;
-
-            color: #777;
-
-            padding-top: 13px;
-
-            border-top:
-                1px solid rgba(255,255,255,.08);
-        }
-
-        .store-info span {
-
-            color: #d4af37;
-
-            font-weight: 700;
-        }
-
-        .footer-text {
-
-            text-align: center;
-
-            font-size: 8px;
-
-            color: #555;
-
-            margin-top: 11px;
-
-            letter-spacing: 1px;
         }
 
         .floating-whatsapp {
 
-            position: fixed;
-
-            right: 18px;
-            bottom: 18px;
-
-            width: 54px;
-            height: 54px;
-
-            border-radius: 50%;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #25d366,
-                    #1da853
-                );
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            color: white;
-
-            text-decoration: none;
-
-            font-size: 25px;
-
-            box-shadow:
-                0 8px 25px rgba(37,211,102,.35);
-
-            z-index: 100;
-
-            animation: whatsappPulse 2s infinite;
+            right: 14px;
+            bottom: 14px;
         }
 
-        @keyframes whatsappPulse {
+        .support-box {
+            font-size: 7px;
+        }
+    }
 
-            0% {
-                box-shadow:
-                    0 0 0 0 rgba(37,211,102,.35);
-            }
+    @media (max-width: 360px) {
 
-            70% {
-                box-shadow:
-                    0 0 0 13px rgba(37,211,102,0);
-            }
-
-            100% {
-                box-shadow:
-                    0 0 0 0 rgba(37,211,102,0);
-            }
+        .phone-container {
+            padding: 20px 10px;
         }
 
-        .modal {
+        .img-wrapper {
 
-            display: none;
-
-            position: fixed;
-
-            z-index: 9999;
-
-            inset: 0;
-
-            width: 100%;
-            height: 100%;
-
-            background:
-                rgba(0,0,0,.94);
-
-            justify-content: center;
-
-            align-items: center;
-
-            padding: 20px;
-
-            backdrop-filter: blur(10px);
-
-            animation: modalIn .25s ease;
+            width: 65px;
+            height: 65px;
         }
 
-        @keyframes modalIn {
-
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
+        .item-name {
+            font-size: 10px;
         }
 
-        .modal img {
-
-            max-width: 95%;
-
-            max-height: 78vh;
-
-            border-radius: 15px;
-
-            border: 2px solid #d4af37;
-
-            box-shadow:
-                0 0 35px rgba(212,175,55,.35);
-
-            animation: imageIn .3s ease;
+        .buy-btn {
+            padding: 5px 8px;
         }
 
-        @keyframes imageIn {
-
-            from {
-                transform: scale(.9);
-                opacity: 0;
-            }
-
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
+        .store-info {
+            font-size: 8px;
         }
 
-        .modal-close {
-
-            position: absolute;
-
-            top: 20px;
-            right: 20px;
-
-            color: #fff;
-
-            font-size: 27px;
-
-            cursor: pointer;
-
-            background:
-                rgba(255,255,255,.1);
-
-            width: 42px;
-            height: 42px;
-
-            border-radius: 50%;
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-
-            border:
-                1px solid rgba(255,255,255,.1);
+        .support-info {
+            gap: 5px;
         }
+    }
 
-        @media (max-width: 480px) {
+</style>
 
-            body {
-                padding: 8px;
-                align-items: flex-start;
-            }
+</head><body><div class="phone-container">
 
-            .phone-container {
+    <div class="header-section">
 
-                margin-top: 5px;
+        <div class="logo-wrapper">
 
-                border-radius: 25px;
+            <img
+                src="logo.png"
+                alt="ProVitBaku Logo"
+                onerror="this.style.display='none'"
+            >
 
-                padding: 23px 12px;
+        </div>
 
-                min-height:
-                    calc(100vh - 18px);
-            }
+        <h1>
+            ProVit<span>Baku</span>
+        </h1>
 
-            .logo-wrapper {
+        <div class="badge-store">
+            Online Supplement Store
+        </div>
 
-                width: 88px;
-                height: 88px;
-            }
+    </div>
 
-            h1 {
-                font-size: 21px;
-            }
+    <div class="search-box">
 
-            .products-grid {
-                gap: 7px;
-            }
+        <i class="fa-solid fa-magnifying-glass"></i>
 
-            .product-card {
-                min-height: 74px;
-            }
+        <input
+            type="text"
+            id="productSearch"
+            placeholder="Məhsul axtar..."
+            autocomplete="off"
+        >
 
-            .item-row {
-                padding: 9px;
-                gap: 10px;
-            }
+        <span
+            class="search-clear"
+            id="searchClear"
+            onclick="clearSearch()"
+        >
 
-            .img-wrapper {
-                width: 72px;
-                height: 72px;
-            }
+            <i class="fa-solid fa-xmark"></i>
 
-            .item-name {
-                font-size: 11px;
-            }
+        </span>
 
-            .item-price {
-                font-size: 12px;
-            }
+    </div>
 
-            .buy-btn {
-                padding: 6px 10px;
-                font-size: 9px;
-            }
 
-            .floating-whatsapp {
+    <div
+        id="searchResults"
+        class="search-results"
+    >
 
-                right: 14px;
-                bottom: 14px;
-            }
+        <div class="search-title">
+            Axtarış nəticələri
+        </div>
 
-            .support-box {
-                font-size: 7px;
-            }
-        }
+        <div id="searchResultsList"></div>
 
-        @media (max-width: 360px) {
+    </div>
 
-            .phone-container {
-                padding: 20px 10px;
-            }
 
-            .img-wrapper {
+    <div class="products-grid">
 
-                width: 65px;
-                height: 65px;
-            }
+        <div
+            class="product-card"
+            onclick="showCategory('protein', this)"
+        >
 
-            .item-name {
-                font-size: 10px;
-            }
+            <i class="fa-solid fa-jar"></i>
 
-            .buy-btn {
-                padding: 5px 8px;
-            }
-
-            .store-info {
-                font-size: 8px;
-            }
-
-            .support-info {
-                gap: 5px;
-            }
-        }
-
-    </style>
-</head>
-
-<body>
-
-    <div class="phone-container">
-
-        <div class="header-section">
-
-            <div class="logo-wrapper">
-
-                <img
-                    src="logo.png"
-                    alt="ProVitBaku Logo"
-                    onerror="this.style.display='none'"
-                >
-
-            </div>
-
-            <h1>
-                ProVit<span>Baku</span>
-            </h1>
-
-            <div class="badge-store">
-                Online Supplement Store
-            </div>
+            <h4>PROTEİN</h4>
 
         </div>
 
 
-        <!-- SEARCH -->
+        <div
+            class="product-card"
+            onclick="showCategory('creatine', this)"
+        >
 
-        <div class="search-box">
+            <i class="fa-solid fa-fire"></i>
 
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <h4>CREATINE</h4>
 
-            <input
-                type="text"
-                id="productSearch"
-                placeholder="Məhsul axtar..."
-                autocomplete="off"
-            >
+        </div>
+
+
+        <div
+            class="product-card"
+            onclick="showCategory('vitamins', this)"
+        >
+
+            <i class="fa-solid fa-pills"></i>
+
+            <h4>VITAMINS</h4>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="protein-section"
+        class="category-section"
+    >
+
+        <div class="section-title">
+
+            Protein Məhsulları
 
             <span
-                class="search-clear"
-                id="searchClear"
-                onclick="clearSearch()"
+                class="back-text"
+                onclick="goHome()"
             >
 
-                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Geri
 
             </span>
 
         </div>
 
 
-        <div
-            id="searchResults"
-            class="search-results"
-        >
+        <div class="items-container">
 
-            <div class="search-title">
-                Axtarış nəticələri
-            </div>
+            <div class="item-row">
 
-            <div id="searchResultsList"></div>
-
-        </div>
-
-
-        <!-- CATEGORIES -->
-
-        <div class="products-grid">
-
-            <div
-                class="product-card"
-                onclick="showCategory('protein', this)"
-            >
-
-                <i class="fa-solid fa-jar"></i>
-
-                <h4>PROTEİN</h4>
-
-            </div>
-
-
-            <div
-                class="product-card"
-                onclick="showCategory('creatine', this)"
-            >
-
-                <i class="fa-solid fa-fire"></i>
-
-                <h4>CREATINE</h4>
-
-            </div>
-
-
-            <div
-                class="product-card"
-                onclick="showCategory('vitamins', this)"
-            >
-
-                <i class="fa-solid fa-pills"></i>
-
-                <h4>VITAMINS</h4>
-
-            </div>
-
-        </div>
-
-
-        <!-- PROTEIN -->
-
-        <div
-            id="protein-section"
-            class="category-section"
-        >
-
-            <div class="section-title">
-
-                Protein Məhsulları
-
-                <span
-                    class="back-text"
-                    onclick="goHome()"
+                <div
+                    class="img-wrapper"
+                    onclick="openModal('protein1.jpg')"
                 >
 
-                    <i class="fa-solid fa-arrow-left"></i>
-
-                    Geri
-
-                </span>
-
-            </div>
-
-
-            <div class="items-container">
-
-                <div class="item-row">
-
-                    <div
-                        class="img-wrapper"
-                        onclick="openModal('protein1.jpg')"
+                    <img
+                        src="protein1.jpg"
+                        alt="Whey Protein Gold"
+                        class="item-img"
                     >
 
-                        <img
-                            src="protein1.jpg"
-                            alt="Whey Protein Gold"
-                            class="item-img"
-                        >
+                    <div class="zoom-icon">
 
-                        <div class="zoom-icon">
-
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="item-details">
-
-                        <div class="item-name">
-                            Whey Protein Gold
-                        </div>
-
-                        <div class="item-price">
-                            95 AZN
-                        </div>
-
-                        <a
-                            href="#"
-                            onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Whey Protein Gold (95 AZN)'); return false;"
-                            class="buy-btn"
-                        >
-
-                            <i class="fa-brands fa-whatsapp"></i>
-
-                            Sifariş Et
-
-                        </a>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
 
                     </div>
 
                 </div>
 
-            </div>
 
-        </div>
+                <div class="item-details">
 
+                    <div class="item-name">
+                        Whey Protein Gold
+                    </div>
 
-        <!-- CREATINE -->
+                    <div class="item-price">
+                        95 AZN
+                    </div>
 
-        <div
-            id="creatine-section"
-            class="category-section"
-        >
-
-            <div class="section-title">
-
-                Creatine Məhsulları
-
-                <span
-                    class="back-text"
-                    onclick="goHome()"
-                >
-
-                    <i class="fa-solid fa-arrow-left"></i>
-
-                    Geri
-
-                </span>
-
-            </div>
-
-
-            <div class="items-container">
-
-                <div class="item-row">
-
-                    <div
-                        class="img-wrapper"
-                        onclick="openModal('creatine1.jpg')"
+                    <a
+                        href="#"
+                        onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Whey Protein Gold (95 AZN)'); return false;"
+                        class="buy-btn"
                     >
 
-                        <img
-                            src="creatine1.jpg"
-                            alt="Pure Creatine Monohydrate"
-                            class="item-img"
-                        >
+                        <i class="fa-brands fa-whatsapp"></i>
 
-                        <div class="zoom-icon">
+                        Sifariş Et
 
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="item-details">
-
-                        <div class="item-name">
-                            Pure Creatine Monohydrate
-                        </div>
-
-                        <div class="item-price">
-                            50 AZN
-                        </div>
-
-                        <a
-                            href="#"
-                            onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Pure Creatine Monohydrate (50 AZN)'); return false;"
-                            class="buy-btn"
-                        >
-
-                            <i class="fa-brands fa-whatsapp"></i>
-
-                            Sifariş Et
-
-                        </a>
-
-                    </div>
+                    </a>
 
                 </div>
 
             </div>
-
-        </div>
-
-
-        <!-- VITAMINS -->
-
-        <div
-            id="vitamins-section"
-            class="category-section"
-        >
-
-            <div class="section-title">
-
-                Vitamin Məhsulları
-
-                <span
-                    class="back-text"
-                    onclick="goHome()"
-                >
-
-                    <i class="fa-solid fa-arrow-left"></i>
-
-                    Geri
-
-                </span>
-
-            </div>
-
-
-            <div class="items-container">
-
-
-                <!-- PRODUCT 1 -->
-
-                <div class="item-row">
-
-                    <div
-                        class="img-wrapper"
-                        onclick="openModal('vitamin1.jpg')"
-                    >
-
-                        <img
-                            src="vitamin1.jpg"
-                            alt="Multivitamin Complex"
-                            class="item-img"
-                        >
-
-                        <div class="zoom-icon">
-
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="item-details">
-
-                        <div class="item-name">
-                            Multivitamin Complex
-                        </div>
-
-                        <div class="item-price">
-                            45 AZN
-                        </div>
-
-                        <a
-                            href="#"
-                            onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Multivitamin Complex (45 AZN)'); return false;"
-                            class="buy-btn"
-                        >
-
-                            <i class="fa-brands fa-whatsapp"></i>
-
-                            Sifariş Et
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 2 -->
-
-                <div class="item-row">
-
-                    <div
-                        class="img-wrapper"
-                        onclick="openModal('vitamin2.jpg')"
-                    >
-
-                        <img
-                            src="vitamin2.jpg"
-                            alt="Omega-3 Fish Oil"
-                            class="item-img"
-                        >
-
-                        <div class="zoom-icon">
-
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="item-details">
-
-                        <div class="item-name">
-                            Omega-3 Fish Oil
-                        </div>
-
-                        <div class="item-price">
-                            35 AZN
-                        </div>
-
-                        <a
-                            href="#"
-                            onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Omega-3 Fish Oil (35 AZN)'); return false;"
-                            class="buy-btn"
-                        >
-
-                            <i class="fa-brands fa-whatsapp"></i>
-
-                            Sifariş Et
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PRODUCT 3 -->
-
-                <div class="item-row">
-
-                    <div
-                        class="img-wrapper"
-                        onclick="openModal('vitamin3.jpg')"
-                    >
-
-                        <img
-                            src="vitamin3.jpg"
-                            alt="Vitamin D3 + K2"
-                            class="item-img"
-                        >
-
-                        <div class="zoom-icon">
-
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="item-details">
-
-                        <div class="item-name">
-                            Vitamin D3 + K2
-                        </div>
-
-                        <div class="item-price">
-                            30 AZN
-                        </div>
-
-                        <a
-                            href="#"
-                            onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Vitamin D3 + K2 (30 AZN)'); return false;"
-                            class="buy-btn"
-                        >
-
-                            <i class="fa-brands fa-whatsapp"></i>
-
-                            Sifariş Et
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- WHATSAPP ORDER -->
-
-        <div class="order-card">
-
-            <h3>
-                Sual və Məsləhət
-            </h3>
-
-            <p>
-                Digər məhsullar üçün bizə birbaşa yazın.
-            </p>
-
-            <a
-                href="#"
-                onclick="openWhatsApp('Salam, ProVitBaku-dan məhsul barədə məlumat almaq istəyirəm.'); return false;"
-                class="whatsapp-btn"
-            >
-
-                <i
-                    class="fa-brands fa-whatsapp"
-                    style="font-size:18px;"
-                ></i>
-
-                ÜMUMİ WHATSAPP YAZ
-
-            </a>
-
-
-            <div class="support-info">
-
-                <div class="support-box">
-
-                    <i class="fa-solid fa-truck-fast"></i>
-
-                    Bakı və rayonlara sürətli çatdırılma
-
-                </div>
-
-                <div class="support-box whatsapp-support">
-
-                    <i class="fa-brands fa-whatsapp"></i>
-
-                    WhatsApp dəstək
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- STORE INFO -->
-
-        <div class="store-info">
-
-            <div>
-                📍
-                <span>
-                    Bakı, Azərbaycan
-                </span>
-            </div>
-
-            <div>
-                ⚡
-                <span>
-                    Bakı və rayonlara sürətli çatdırılma
-                </span>
-            </div>
-
-        </div>
-
-
-        <div class="footer-text">
-
-            PROVITBAKU © 2026 -
-            Bütün hüquqlar qorunur.
 
         </div>
 
     </div>
 
 
-    <!-- FLOATING WHATSAPP -->
-
-    <a
-        href="#"
-        onclick="openWhatsApp('Salam, ProVitBaku-dan məhsullar barədə məlumat almaq istəyirəm.'); return false;"
-        class="floating-whatsapp"
-        aria-label="WhatsApp"
+    <div
+        id="creatine-section"
+        class="category-section"
     >
 
-        <i class="fa-brands fa-whatsapp"></i>
+        <div class="section-title">
 
-    </a>
+            Creatine Məhsulları
+
+            <span
+                class="back-text"
+                onclick="goHome()"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Geri
+
+            </span>
+
+        </div>
 
 
-    <!-- IMAGE MODAL -->
+        <div class="items-container">
+
+            <div class="item-row">
+
+                <div
+                    class="img-wrapper"
+                    onclick="openModal('creatine1.jpg')"
+                >
+
+                    <img
+                        src="creatine1.jpg"
+                        alt="Pure Creatine Monohydrate"
+                        class="item-img"
+                    >
+
+                    <div class="zoom-icon">
+
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="item-details">
+
+                    <div class="item-name">
+                        Pure Creatine Monohydrate
+                    </div>
+
+                    <div class="item-price">
+                        50 AZN
+                    </div>
+
+                    <a
+                        href="#"
+                        onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Pure Creatine Monohydrate (50 AZN)'); return false;"
+                        class="buy-btn"
+                    >
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        Sifariş Et
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 
     <div
-        id="imageModal"
-        class="modal"
+        id="vitamins-section"
+        class="category-section"
+    >
+
+        <div class="section-title">
+
+            Vitamin Məhsulları
+
+            <span
+                class="back-text"
+                onclick="goHome()"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Geri
+
+            </span>
+
+        </div>
+
+
+        <div class="items-container">
+
+
+            <div class="item-row">
+
+                <div
+                    class="img-wrapper"
+                    onclick="openModal('vitamin1.jpg')"
+                >
+
+                    <img
+                        src="vitamin1.jpg"
+                        alt="Multivitamin Complex"
+                        class="item-img"
+                    >
+
+                    <div class="zoom-icon">
+
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="item-details">
+
+                    <div class="item-name">
+                        Multivitamin Complex
+                    </div>
+
+                    <div class="item-price">
+                        45 AZN
+                    </div>
+
+                    <a
+                        href="#"
+                        onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Multivitamin Complex (45 AZN)'); return false;"
+                        class="buy-btn"
+                    >
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        Sifariş Et
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="item-row">
+
+                <div
+                    class="img-wrapper"
+                    onclick="openModal('vitamin2.jpg')"
+                >
+
+                    <img
+                        src="vitamin2.jpg"
+                        alt="Omega-3 Fish Oil"
+                        class="item-img"
+                    >
+
+                    <div class="zoom-icon">
+
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="item-details">
+
+                    <div class="item-name">
+                        Omega-3 Fish Oil
+                    </div>
+
+                    <div class="item-price">
+                        35 AZN
+                    </div>
+
+                    <a
+                        href="#"
+                        onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Omega-3 Fish Oil (35 AZN)'); return false;"
+                        class="buy-btn"
+                    >
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        Sifariş Et
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="item-row">
+
+                <div
+                    class="img-wrapper"
+                    onclick="openModal('vitamin3.jpg')"
+                >
+
+                    <img
+                        src="vitamin3.jpg"
+                        alt="Vitamin D3 + K2"
+                        class="item-img"
+                    >
+
+                    <div class="zoom-icon">
+
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="item-details">
+
+                    <div class="item-name">
+                        Vitamin D3 + K2
+                    </div>
+
+                    <div class="item-price">
+                        30 AZN
+                    </div>
+
+                    <a
+                        href="#"
+                        onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Vitamin D3 + K2 (30 AZN)'); return false;"
+                        class="buy-btn"
+                    >
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        Sifariş Et
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="order-card">
+
+        <h3>
+            Sual və Məsləhət
+        </h3>
+
+        <p>
+            Digər məhsullar üçün bizə birbaşa yazın.
+        </p>
+
+        <a
+            href="#"
+            onclick="openWhatsApp('Salam, ProVitBaku-dan məhsul barədə məlumat almaq istəyirəm.'); return false;"
+            class="whatsapp-btn"
+        >
+
+            <i
+                class="fa-brands fa-whatsapp"
+                style="font-size:18px;"
+            ></i>
+
+            ÜMUMİ WHATSAPP YAZ
+
+        </a>
+
+
+        <div class="support-info">
+
+            <div class="support-box">
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                Bakı və rayonlara sürətli çatdırılma
+
+            </div>
+
+            <div class="support-box whatsapp-support">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                WhatsApp dəstək
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="store-info">
+
+        <div>
+            📍
+            <span>
+                Bakı, Azərbaycan
+            </span>
+        </div>
+
+        <div>
+            ⚡
+            <span>
+                Bakı və rayonlara sürətli çatdırılma
+            </span>
+        </div>
+
+    </div>
+
+
+    <div class="footer-text">
+
+        PROVITBAKU © 2026 -
+        Bütün hüquqlar qorunur.
+
+    </div>
+
+</div>
+
+
+<a
+    href="#"
+    onclick="openWhatsApp('Salam, ProVitBaku-dan məhsullar barədə məlumat almaq istəyirəm.'); return false;"
+    class="floating-whatsapp"
+    aria-label="WhatsApp"
+>
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<div
+    id="imageModal"
+    class="modal"
+    onclick="closeModal()"
+>
+
+    <span
+        class="modal-close"
         onclick="closeModal()"
     >
 
-        <span
-            class="modal-close"
-            onclick="closeModal()"
-        >
+        &times;
 
-            &times;
+    </span>
 
-        </span>
+    <img
+        id="modalImg"
+        src=""
+        alt="Böyük Məhsul Şəkli"
+        onclick="event.stopPropagation()"
+    >
 
-        <img
-            id="modalImg"
-            src=""
-            alt="Böyük Məhsul Şəkli"
-            onclick="event.stopPropagation()"
-        >
-
-    </div>
+</div>
 
 
-    <!-- JAVASCRIPT -->
+<script>
 
-    <script>
-
-        /* =========================================
-           WHATSAPP SYSTEM
-           Android WhatsApp -> WhatsApp Web fallback
-        ========================================= */
-
-        const WHATSAPP_NUMBER = "994709939998";
+    const WHATSAPP_NUMBER = "994709939998";
 
 
-        function openWhatsApp(message) {
+    function openWhatsApp(message) {
 
-            const encodedMessage =
-                encodeURIComponent(message);
-
-
-            const whatsappApp =
-                "whatsapp://send?phone=" +
-                WHATSAPP_NUMBER +
-                "&text=" +
-                encodedMessage;
+        const encodedMessage =
+            encodeURIComponent(message);
 
 
-            const whatsappWeb =
-                "https://web.whatsapp.com/send?phone=" +
-                WHATSAPP_NUMBER +
-                "&text=" +
-                encodedMessage;
+        const whatsappApp =
+            "whatsapp://send?phone=" +
+            WHATSAPP_NUMBER +
+            "&text=" +
+            encodedMessage;
 
 
-            const startTime = Date.now();
+        const whatsappWeb =
+            "https://web.whatsapp.com/send?phone=" +
+            WHATSAPP_NUMBER +
+            "&text=" +
+            encodedMessage;
 
 
-            /* Əvvəl WhatsApp tətbiqini açmağa çalış */
-
-            window.location.href = whatsappApp;
+        const startTime = Date.now();
 
 
-            /*
-             * Əgər WhatsApp tətbiqi yoxdursa,
-             * bir neçə saniyə sonra WhatsApp Web açılır.
-             */
+        window.location.href = whatsappApp;
 
-            setTimeout(function() {
 
-                if (Date.now() - startTime < 2500) {
+        setTimeout(function() {
 
-                    window.location.href = whatsappWeb;
+            if (Date.now() - startTime < 2500) {
 
-                }
+                window.location.href = whatsappWeb;
 
-            }, 1200);
+            }
+
+        }, 1200);
+
+    }
+
+
+    function showCategory(category, clickedCard) {
+
+        document
+            .querySelectorAll('.category-section')
+            .forEach(sec => {
+
+                sec.classList.remove('active');
+
+            });
+
+
+        document
+            .querySelectorAll('.product-card')
+            .forEach(card => {
+
+                card.classList.remove('active');
+
+            });
+
+
+        const section =
+            document.getElementById(
+                category + '-section'
+            );
+
+
+        if (section) {
+
+            section.classList.add('active');
 
         }
 
 
-        /* =========================================
-           CATEGORY
-        ========================================= */
+        if (clickedCard) {
 
-        function showCategory(category, clickedCard) {
+            clickedCard.classList.add('active');
 
-            document
-                .querySelectorAll('.category-section')
-                .forEach(sec => {
+        }
 
-                    sec.classList.remove('active');
-
-                });
+    }
 
 
-            document
-                .querySelectorAll('.product-card')
-                .forEach(card => {
+    function goHome() {
 
-                    card.classList.remove('active');
+        document
+            .querySelectorAll('.category-section')
+            .forEach(sec => {
 
-                });
+                sec.classList.remove('active');
 
-
-            const section =
-                document.getElementById(
-                    category + '-section'
-                );
+            });
 
 
-            if (section) {
+        document
+            .querySelectorAll('.product-card')
+            .forEach(card => {
 
-                section.classList.add('active');
+                card.classList.remove('active');
+
+            });
+
+    }
+
+
+    const products = [
+
+        {
+            name: "Whey Protein Gold",
+            price: "95 AZN",
+            image: "protein1.jpg",
+            message: "Whey Protein Gold (95 AZN)",
+
+            keywords: [
+                "protein",
+                "whey",
+                "whey protein",
+                "protein gold",
+                "zülal",
+                "zulal",
+                "pro"
+            ]
+        },
+
+        {
+            name: "Pure Creatine Monohydrate",
+            price: "50 AZN",
+            image: "creatine1.jpg",
+            message: "Pure Creatine Monohydrate (50 AZN)",
+
+            keywords: [
+                "creatine",
+                "creatin",
+                "kreatin",
+                "kreatine",
+                "monohydrate",
+                "mono",
+                "pure creatine"
+            ]
+        },
+
+        {
+            name: "Multivitamin Complex",
+            price: "45 AZN",
+            image: "vitamin1.jpg",
+            message: "Multivitamin Complex (45 AZN)",
+
+            keywords: [
+                "vitamin",
+                "vitaminler",
+                "vitaminlər",
+                "multivitamin",
+                "multi vitamin",
+                "complex",
+                "vitamins"
+            ]
+        },
+
+        {
+            name: "Omega-3 Fish Oil",
+            price: "35 AZN",
+            image: "vitamin2.jpg",
+            message: "Omega-3 Fish Oil (35 AZN)",
+
+            keywords: [
+                "omega",
+                "omega3",
+                "omega-3",
+                "fish",
+                "fish oil",
+                "balıq yağı",
+                "baliq yagi"
+            ]
+        },
+
+        {
+            name: "Vitamin D3 + K2",
+            price: "30 AZN",
+            image: "vitamin3.jpg",
+            message: "Vitamin D3 + K2 (30 AZN)",
+
+            keywords: [
+                "d3",
+                "d 3",
+                "vitamin d",
+                "vitamin d3",
+                "k2",
+                "d3 k2",
+                "d3+k2",
+                "d vitamin",
+                "vitamin k2"
+            ]
+        }
+
+    ];
+
+
+    function normalizeText(text) {
+
+        return String(text)
+            .toLowerCase()
+            .trim()
+            .replace(/ə/g, "e")
+            .replace(/ı/g, "i")
+            .replace(/ö/g, "o")
+            .replace(/ü/g, "u")
+            .replace(/ğ/g, "g")
+            .replace(/ş/g, "s")
+            .replace(/ç/g, "c")
+            .replace(/[^a-z0-9]+/g, "");
+
+    }
+
+
+    const searchInput =
+        document.getElementById('productSearch');
+
+    const searchResults =
+        document.getElementById('searchResults');
+
+    const searchResultsList =
+        document.getElementById('searchResultsList');
+
+    const searchClear =
+        document.getElementById('searchClear');
+
+
+    searchInput.addEventListener(
+        'input',
+        function() {
+
+            const rawQuery =
+                this.value.trim();
+
+
+            const query =
+                normalizeText(rawQuery);
+
+
+            if (query.length === 0) {
+
+                searchResults.classList.remove('active');
+
+                searchResultsList.innerHTML = '';
+
+                searchClear.style.display = 'none';
+
+                return;
 
             }
 
 
-            if (clickedCard) {
-
-                clickedCard.classList.add('active');
-
-            }
-
-        }
+            searchClear.style.display = 'block';
 
 
-        /* =========================================
-           HOME
-        ========================================= */
+            const results =
+                products.filter(product => {
 
-        function goHome() {
-
-            document
-                .querySelectorAll('.category-section')
-                .forEach(sec => {
-
-                    sec.classList.remove('active');
-
-                });
+                    const productName =
+                        normalizeText(product.name);
 
 
-            document
-                .querySelectorAll('.product-card')
-                .forEach(card => {
-
-                    card.classList.remove('active');
-
-                });
-
-        }
+                    if (productName.includes(query)) {
+                        return true;
+                    }
 
 
-        /* =========================================
-           PRODUCT DATABASE
-           Axtarış üçün əlavə sözlər
-        ========================================= */
+                    return product.keywords.some(keyword => {
 
-        const products = [
-
-            {
-                name: "Whey Protein Gold",
-                price: "95 AZN",
-                image: "protein1.jpg",
-                message: "Whey Protein Gold (95 AZN)",
-
-                keywords: [
-                    "protein",
-                    "whey",
-                    "whey protein",
-                    "protein gold",
-                    "zülal",
-                    "zulal",
-                    "pro"
-                ]
-            },
-
-            {
-                name: "Pure Creatine Monohydrate",
-                price: "50 AZN",
-                image: "creatine1.jpg",
-                message: "Pure Creatine Monohydrate (50 AZN)",
-
-                keywords: [
-                    "creatine",
-                    "creatin",
-                    "kreatin",
-                    "kreatine",
-                    "monohydrate",
-                    "mono",
-                    "pure creatine"
-                ]
-            },
-
-            {
-                name: "Multivitamin Complex",
-                price: "45 AZN",
-                image: "vitamin1.jpg",
-                message: "Multivitamin Complex (45 AZN)",
-
-                keywords: [
-                    "vitamin",
-                    "vitaminler",
-                    "vitaminlər",
-                    "multivitamin",
-                    "multi vitamin",
-                    "complex",
-                    "vitamins"
-                ]
-            },
-
-            {
-                name: "Omega-3 Fish Oil",
-                price: "35 AZN",
-                image: "vitamin2.jpg",
-                message: "Omega-3 Fish Oil (35 AZN)",
-
-                keywords: [
-                    "omega",
-                    "omega3",
-                    "omega-3",
-                    "fish",
-                    "fish oil",
-                    "balıq yağı",
-                    "baliq yagi"
-                ]
-            },
-
-            {
-                name: "Vitamin D3 + K2",
-                price: "30 AZN",
-                image: "vitamin3.jpg",
-                message: "Vitamin D3 + K2 (30 AZN)",
-
-                keywords: [
-                    "d3",
-                    "d 3",
-                    "vitamin d",
-                    "vitamin d3",
-                    "k2",
-                    "d3 k2",
-                    "d3+k2",
-                    "d vitamin",
-                    "vitamin k2"
-                ]
-            }
-
-        ];
-
-
-        /* =========================================
-           SEARCH NORMALIZATION
-           Azərbaycan hərfləri və yazılış fərqləri
-        ========================================= */
-
-        function normalizeText(text) {
-
-            return String(text)
-                .toLowerCase()
-                .trim()
-                .replace(/ə/g, "e")
-                .replace(/ı/g, "i")
-                .replace(/ö/g, "o")
-                .replace(/ü/g, "u")
-                .replace(/ğ/g, "g")
-                .replace(/ş/g, "s")
-                .replace(/ç/g, "c")
-                .replace(/[^a-z0-9]+/g, "");
-
-        }
-
-
-        const searchInput =
-            document.getElementById('productSearch');
-
-        const searchResults =
-            document.getElementById('searchResults');
-
-        const searchResultsList =
-            document.getElementById('searchResultsList');
-
-        const searchClear =
-            document.getElementById('searchClear');
-
-
-        /* =========================================
-           PRODUCT SEARCH
-        ========================================= */
-
-        searchInput.addEventListener(
-            'input',
-            function() {
-
-                const rawQuery =
-                    this.value.trim();
-
-
-                const query =
-                    normalizeText(rawQuery);
-
-
-                if (query.length === 0) {
-
-                    searchResults.classList.remove('active');
-
-                    searchResultsList.innerHTML = '';
-
-                    searchClear.style.display = 'none';
-
-                    return;
-
-                }
-
-
-                searchClear.style.display = 'block';
-
-
-                /*
-                 * Artıq həm məhsul adını,
-                 * həm də əlavə açar sözləri yoxlayırıq.
-                 */
-
-                const results =
-                    products.filter(product => {
-
-                        const productName =
-                            normalizeText(product.name);
-
-
-                        if (productName.includes(query)) {
-                            return true;
-                        }
-
-
-                        return product.keywords.some(keyword => {
-
-                            return normalizeText(keyword)
-                                .includes(query) ||
-                                query.includes(
-                                    normalizeText(keyword)
-                                );
-
-                        });
+                        return normalizeText(keyword)
+                            .includes(query) ||
+                            query.includes(
+                                normalizeText(keyword)
+                            );
 
                     });
 
+                });
 
-                searchResults.classList.add('active');
+
+            searchResults.classList.add('active');
 
 
-                if (results.length === 0) {
+            if (results.length === 0) {
 
-                    searchResultsList.innerHTML = `
+                searchResultsList.innerHTML = `
 
-                        <div class="search-empty">
+                    <div class="search-empty">
 
-                            <i
-                                class="fa-solid fa-circle-exclamation"
-                                style="color:#d4af37; margin-right:5px;"
-                            ></i>
+                        <i
+                            class="fa-solid fa-circle-exclamation"
+                            style="color:#d4af37; margin-right:5px;"
+                        ></i>
 
-                            Bu adda məhsul tapılmadı.
+                        Bu adda məhsul tapılmadı.
+
+                    </div>
+
+                `;
+
+                return;
+
+            }
+
+
+            searchResultsList.innerHTML =
+                results.map(product => {
+
+                    /*
+                     * DÜZƏLDİLƏN HİSSƏ:
+                     * Məhsulun adı və qiyməti birbaşa
+                     * WhatsApp mesajına əlavə olunur.
+                     */
+
+                    const whatsappMessage =
+                        "Salam, bu məhsulu sizdən sifariş etmək istəyirəm: " +
+                        product.message;
+
+                    const whatsappLink =
+                        "https://wa.me/" +
+                        WHATSAPP_NUMBER +
+                        "?text=" +
+                        encodeURIComponent(whatsappMessage);
+
+
+                    return `
+
+                        <div class="search-product">
+
+                            <img
+                                src="${product.image}"
+                                alt="${product.name}"
+                                class="search-product-img"
+                                onclick="openModal('${product.image}')"
+                            >
+
+                            <div class="search-product-details">
+
+                                <div class="search-product-name">
+
+                                    ${product.name}
+
+                                </div>
+
+                                <div class="search-product-price">
+
+                                    ${product.price}
+
+                                </div>
+
+                                <a
+                                    href="${whatsappLink}"
+                                    class="search-buy-btn"
+                                >
+
+                                    <i class="fa-brands fa-whatsapp"></i>
+
+                                    Sifariş Et
+
+                                </a>
+
+                            </div>
 
                         </div>
 
                     `;
 
-                    return;
+                }).join('');
 
-                }
-
-
-                searchResultsList.innerHTML =
-                    results.map(product => {
-
-                        const whatsappMessage =
-                            "Salam, bu məhsulu sizdən sifariş etmək istəyirəm: " +
-                            product.message;
+        }
+    );
 
 
-                        return `
+    function clearSearch() {
 
-                            <div class="search-product">
+        searchInput.value = '';
 
-                                <img
-                                    src="${product.image}"
-                                    alt="${product.name}"
-                                    class="search-product-img"
-                                    onclick="openModal('${product.image}')"
-                                >
+        searchResults.classList.remove('active');
 
-                                <div class="search-product-details">
+        searchResultsList.innerHTML = '';
 
-                                    <div class="search-product-name">
+        searchClear.style.display = 'none';
 
-                                        ${product.name}
+        searchInput.focus();
 
-                                    </div>
+    }
 
-                                    <div class="search-product-price">
 
-                                        ${product.price}
+    function openModal(imgSrc) {
 
-                                    </div>
+        const modal =
+            document.getElementById('imageModal');
 
-                                    <a
-                                        href="#"
-                                        onclick="openWhatsApp(${JSON.stringify(whatsappMessage)}); return false;"
-                                        class="search-buy-btn"
-                                    >
+        const modalImg =
+            document.getElementById('modalImg');
 
-                                        <i class="fa-brands fa-whatsapp"></i>
 
-                                        Sifariş Et
+        modalImg.src = imgSrc;
 
-                                    </a>
+        modal.style.display = 'flex';
 
-                                </div>
+        document.body.style.overflow = 'hidden';
 
-                            </div>
+    }
 
-                        `;
 
-                    }).join('');
+    function closeModal() {
+
+        const modal =
+            document.getElementById('imageModal');
+
+
+        modal.style.display = 'none';
+
+        document.body.style.overflow = '';
+
+    }
+
+
+    document.addEventListener(
+        'keydown',
+        function(event) {
+
+            if (event.key === 'Escape') {
+
+                closeModal();
 
             }
-        );
-
-
-        /* =========================================
-           CLEAR SEARCH
-        ========================================= */
-
-        function clearSearch() {
-
-            searchInput.value = '';
-
-            searchResults.classList.remove('active');
-
-            searchResultsList.innerHTML = '';
-
-            searchClear.style.display = 'none';
-
-            searchInput.focus();
 
         }
+    );
 
 
-        /* =========================================
-           IMAGE MODAL
-        ========================================= */
-
-        function openModal(imgSrc) {
-
-            const modal =
-                document.getElementById('imageModal');
-
-            const modalImg =
-                document.getElementById('modalImg');
+    let touchStartY = 0;
 
 
-            modalImg.src = imgSrc;
+    document.addEventListener(
+        'touchstart',
+        function(e) {
 
-            modal.style.display = 'flex';
+            touchStartY =
+                e.changedTouches[0].screenY;
 
-            document.body.style.overflow = 'hidden';
-
-        }
-
-
-        function closeModal() {
-
-            const modal =
-                document.getElementById('imageModal');
+        },
+        { passive: true }
+    );
 
 
-            modal.style.display = 'none';
+    document.addEventListener(
+        'touchend',
+        function(e) {
 
-            document.body.style.overflow = '';
+            const touchEndY =
+                e.changedTouches[0].screenY;
 
-        }
+
+            const difference =
+                touchStartY - touchEndY;
 
 
-        /* =========================================
-           ESC TO CLOSE
-        ========================================= */
+            if (
+                Math.abs(difference) > 100 &&
+                document.getElementById('imageModal').style.display === 'flex'
+            ) {
 
-        document.addEventListener(
-            'keydown',
-            function(event) {
-
-                if (event.key === 'Escape') {
-
-                    closeModal();
-
-                }
+                closeModal();
 
             }
-        );
+
+        },
+        { passive: true }
+    );
 
 
-        /* =========================================
-           SWIPE / TOUCH FRIENDLY
-        ========================================= */
-
-        let touchStartY = 0;
-
-
-        document.addEventListener(
-            'touchstart',
-            function(e) {
-
-                touchStartY =
-                    e.changedTouches[0].screenY;
-
-            },
-            { passive: true }
-        );
-
-
-        document.addEventListener(
-            'touchend',
-            function(e) {
-
-                const touchEndY =
-                    e.changedTouches[0].screenY;
-
-
-                const difference =
-                    touchStartY - touchEndY;
-
-
-                if (
-                    Math.abs(difference) > 100 &&
-                    document.getElementById('imageModal').style.display === 'flex'
-                ) {
-
-                    closeModal();
-
-                }
-
-            },
-            { passive: true }
-        );
-
-
-    </script>
+</script>
 
 </body>
 </html>
