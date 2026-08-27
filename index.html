@@ -1,42 +1,242 @@
-<!DOCTYPE html>  <html lang="az">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>ProVitBaku - İdman Qidaları</title>  
-    <style>  
-        body { font-family: Arial, sans-serif; background: #121212; color: #fff; margin: 0; padding: 15px; text-align: center; }  
-        .header { background: #1e1e1e; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-bottom: 3px solid #ff4500; }  
-        .logo { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; border: 2px solid #ff4500; }  
-        .header h1 { margin: 5px 0; color: #ff4500; font-size: 24px; }  
-        .header p { color: #ccc; font-size: 14px; margin: 0; }  
-        .products { display: flex; flex-direction: column; gap: 15px; align-items: center; }  
-        .card { background: #1e1e1e; border: 1px solid #333; border-radius: 8px; width: 100%; max-width: 320px; padding: 15px; text-align: left; box-sizing: border-box; }  
-        .card h3 { margin: 0 0 10px; color: #ff4500; }  
-        .price { font-size: 18px; font-weight: bold; color: #4CAF50; margin: 10px 0; }  
-        .btn { display: block; background: #25D366; color: white; text-align: center; padding: 10px; border-radius: 5px; text-decoration: none; font-weight: bold; }  
-    </style>  
-</head>  
-<body>  <div class="header">  
-    <img src="logo.png" alt="ProVitBaku Logo" class="logo">  
-    <h1>ProVitBaku</h1>  
-    <p>Keyfiyyətli Protein və Vitaminlər</p>  
-</div>  
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProVitBaku - Premium Online Store</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
 
-<div class="products">  
-    <div class="card">  
-        <h3>Whey Protein</h3>  
-        <p>Əzələ inkişafı üçün yüksək keyfiyyətli protein.</p>  
-        <div class="price">95 AZN</div>  
-        <a href="https://wa.me/994709939998?text=Salam,%20Whey%20Protein%20sifariş%20etmək%20istəyirəm." class="btn">WhatsApp ilə Sifariş</a>  
-    </div>  
+        body {
+            background-color: #0b0b0b;
+            color: #ffffff;
+            background-image: radial-gradient(circle at center, #1a1a1a 0%, #0b0b0b 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
 
-    <div class="card">  
-        <h3>Creatine Monohydrate</h3>  
-        <p>Güc və enerji artırıcı.</p>  
-        <div class="price">45 AZN</div>  
-        <a href="https://wa.me/994709939998?text=Salam,%20Creatine%20sifariş%20etmək%20istəyirəm." class="btn">WhatsApp ilə Sifariş</a>  
-    </div>  
-</div>
+        .container {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            padding: 30px 20px;
+        }
 
-</body>  
-</html>  
+        /* Logo Bölməsi */
+        .logo-box {
+            margin-bottom: 25px;
+        }
+
+        .logo-box img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #d4af37;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #d4af37;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        p.subtitle {
+            color: #b3b3b3;
+            font-size: 14px;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        /* Kateqoriyalar */
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+        }
+
+        .cat-card {
+            background: rgba(25, 25, 25, 0.8);
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 15px;
+            width: 100px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .cat-card:hover {
+            border-color: #d4af37;
+            transform: translateY(-3px);
+        }
+
+        .cat-card i {
+            font-size: 24px;
+            color: #d4af37;
+            margin-bottom: 8px;
+        }
+
+        .cat-card span {
+            display: block;
+            font-size: 11px;
+            font-weight: 600;
+            color: #ddd;
+            letter-spacing: 0.5px;
+        }
+
+        /* Əlaqə və WhatsApp Bölməsi */
+        .contact-box {
+            background: linear-gradient(145deg, #161616, #0d0d0d);
+            border: 1px solid #d4af37;
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+
+        .contact-box h3 {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .contact-box p {
+            color: #aaa;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        /* WhatsApp Düyməsi */
+        .whatsapp-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #25d366, #1ebe57);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            transition: 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-btn i {
+            font-size: 22px;
+        }
+
+        .info-details {
+            font-size: 12px;
+            color: #888;
+            line-height: 1.6;
+            border-top: 1px solid #222;
+            padding-top: 15px;
+        }
+
+        .info-details span {
+            color: #d4af37;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555;
+            letter-spacing: 1px;
+        }
+
+        footer span {
+            color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo və Başlıq -->
+        <div class="logo-box">
+            <!-- Loqonun adını GitHub-a yüklədiyin şəkil faylının adı ilə əvəz et (məsələn: logo.png) -->
+            <img src="logo.png" alt="ProVitBaku Logo">
+        </div>
+        <h1>ProVitBaku</h1>
+        <p class="subtitle">PREMIUM ONLINE SUPPLEMENT STORE</p>
+
+        <!-- Kateqoriya İkonları -->
+        <div class="categories">
+            <div class="cat-card">
+                <i class="fa-solid fa-jar"></i>
+                <span>PROTEIN</span>
+            </div>
+            <div class="cat-card">
+                <i class="fa-solid fa-mortar-pestle"></i>
+                <span>CREATINE</span>
+            </div>
+            <div class="cat-card">
+                <i class="fa-solid fa-capsules"></i>
+                <span>VITAMINS</span>
+            </div>
+        </div>
+
+        <!-- WhatsApp Əlaqə Qutusu -->
+        <div class="contact-box">
+            <h3>Sifariş və Məsləhət üçün Bizə Yazın</h3>
+            <p>Məhsullar haqqında məlumat almaq və sürətli sifariş üçün birbaşa əlaqə saxlayın.</p>
+            
+            <!-- WhatsApp Linki (Öz nömrənizi 994... formatında yazın) -->
+            <a href="https://wa.me/994709939998?text=Salam,%20ProVitBaku-dan%20məhsul%20sifariş%20etmək%20istəyirəm." target="_blank" class="whatsapp-btn">
+                <i class="fa-brands fa-whatsapp"></i> WHATSAPP İLƏ SİFARİŞ ET
+            </a>
+
+            <div class="info-details">
+                <div>Telefon: <span>+994 70 993 99 98</span></div>
+                <div>Ünvan: <span>Bakı, Azərbaycan 🇦🇿</span></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        PROVITBAKU &copy; 2026 - Bütün hüquqlar qorunur.
+    </footer>
+
+</body>
+</html>
