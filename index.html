@@ -9,24 +9,17 @@
     <meta name="theme-color" content="#080808">
     <meta name="description" content="ProVitBaku - Protein, Creatine və Vitamin məhsulları. Bakı və rayonlara sürətli çatdırılma. WhatsApp ilə əlaqə.">
 
-    <!-- WhatsApp və Sosial Şəbəkə Önizləmə -->
     <meta property="og:title" content="ProVitBaku - Premium Online Supplement Store">
     <meta property="og:description" content="Ən keyfiyyətli supplement məhsulları. Bakı və rayonlara sürətli çatdırılma. Sifariş üçün WhatsApp.">
     <meta property="og:image" content="https://provitbaku.pages.dev/logo.png">
     <meta property="og:url" content="https://provitbaku.pages.dev">
     <meta property="og:type" content="website">
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-
-        /* ================================
-           RESET
-        ================================= */
 
         * {
             margin: 0;
@@ -58,10 +51,6 @@
             overflow-x: hidden;
         }
 
-        /* ================================
-           BACKGROUND EFFECT
-        ================================= */
-
         body::before {
             content: "";
             position: fixed;
@@ -83,10 +72,6 @@
             pointer-events: none;
             z-index: -1;
         }
-
-        /* ================================
-           MAIN PHONE
-        ================================= */
 
         .phone-container {
 
@@ -132,8 +117,6 @@
             }
         }
 
-        /* Gold top line */
-
         .phone-container::before {
 
             content: "";
@@ -155,10 +138,6 @@
 
             opacity: .8;
         }
-
-        /* ================================
-           HEADER
-        ================================= */
 
         .header-section {
 
@@ -286,7 +265,6 @@
 
         /* ================================
            SEARCH
-           YENİ ƏLAVƏ
         ================================= */
 
         .search-box {
@@ -377,8 +355,6 @@
         .search-clear:hover {
             color: #d4af37;
         }
-
-        /* Search Results */
 
         .search-results {
 
@@ -740,10 +716,6 @@
             color: #fff;
         }
 
-        /* ================================
-           PRODUCTS SCROLL
-        ================================= */
-
         .items-container {
 
             display: flex;
@@ -773,10 +745,6 @@
 
             border-radius: 5px;
         }
-
-        /* ================================
-           PRODUCT ROW
-        ================================= */
 
         .item-row {
 
@@ -816,10 +784,6 @@
             box-shadow:
                 0 8px 20px rgba(0,0,0,.4);
         }
-
-        /* ================================
-           PRODUCT IMAGE
-        ================================= */
 
         .img-wrapper {
 
@@ -885,10 +849,6 @@
             backdrop-filter: blur(5px);
         }
 
-        /* ================================
-           PRODUCT DETAILS
-        ================================= */
-
         .item-details {
 
             flex-grow: 1;
@@ -919,10 +879,6 @@
 
             margin-bottom: 7px;
         }
-
-        /* ================================
-           BUY BUTTON
-        ================================= */
 
         .buy-btn {
 
@@ -973,10 +929,6 @@
         .buy-btn i {
             font-size: 12px;
         }
-
-        /* ================================
-           ORDER CARD
-        ================================= */
 
         .order-card {
 
@@ -1104,10 +1056,6 @@
             transform: scale(.97);
         }
 
-        /* ================================
-           DELIVERY + WHATSAPP SUPPORT
-        ================================= */
-
         .support-info {
 
             display: grid;
@@ -1162,10 +1110,6 @@
             color: #25d366;
         }
 
-        /* ================================
-           STORE INFO
-        ================================= */
-
         .store-info {
 
             display: flex;
@@ -1203,10 +1147,6 @@
 
             letter-spacing: 1px;
         }
-
-        /* ================================
-           FLOATING WHATSAPP
-        ================================= */
 
         .floating-whatsapp {
 
@@ -1264,10 +1204,6 @@
                     0 0 0 0 rgba(37,211,102,0);
             }
         }
-
-        /* ================================
-           MODAL
-        ================================= */
 
         .modal {
 
@@ -1367,10 +1303,6 @@
                 1px solid rgba(255,255,255,.1);
         }
 
-        /* ================================
-           MOBILE
-        ================================= */
-
         @media (max-width: 480px) {
 
             body {
@@ -1442,10 +1374,6 @@
             }
         }
 
-        /* ================================
-           VERY SMALL DEVICES
-        ================================= */
-
         @media (max-width: 360px) {
 
             .phone-container {
@@ -1482,10 +1410,6 @@
 
     <div class="phone-container">
 
-        <!-- ============================
-             HEADER
-        ============================= -->
-
         <div class="header-section">
 
             <div class="logo-wrapper">
@@ -1509,9 +1433,7 @@
         </div>
 
 
-        <!-- ============================
-             SEARCH
-        ============================= -->
+        <!-- SEARCH -->
 
         <div class="search-box">
 
@@ -1529,15 +1451,13 @@
                 id="searchClear"
                 onclick="clearSearch()"
             >
+
                 <i class="fa-solid fa-xmark"></i>
+
             </span>
 
         </div>
 
-
-        <!-- ============================
-             SEARCH RESULTS
-        ============================= -->
 
         <div
             id="searchResults"
@@ -1553,9 +1473,7 @@
         </div>
 
 
-        <!-- ============================
-             CATEGORIES
-        ============================= -->
+        <!-- CATEGORIES -->
 
         <div class="products-grid">
 
@@ -1597,9 +1515,7 @@
         </div>
 
 
-        <!-- ============================
-             PROTEIN
-        ============================= -->
+        <!-- PROTEIN -->
 
         <div
             id="protein-section"
@@ -1659,8 +1575,8 @@
                         </div>
 
                         <a
-                            href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Whey%20Protein%20Gold%20(95%20AZN)"
-                            target="_blank"
+                            href="#"
+                            onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Whey Protein Gold (95 AZN)'); return false;"
                             class="buy-btn"
                         >
 
@@ -1679,9 +1595,7 @@
         </div>
 
 
-        <!-- ============================
-             CREATINE
-        ============================= -->
+        <!-- CREATINE -->
 
         <div
             id="creatine-section"
@@ -1741,8 +1655,8 @@
                         </div>
 
                         <a
-                            href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Pure%20Creatine%20Monohydrate%20(50%20AZN)"
-                            target="_blank"
+                            href="#"
+                            onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Pure Creatine Monohydrate (50 AZN)'); return false;"
                             class="buy-btn"
                         >
 
@@ -1761,9 +1675,7 @@
         </div>
 
 
-        <!-- ============================
-             VITAMINS
-        ============================= -->
+        <!-- VITAMINS -->
 
         <div
             id="vitamins-section"
@@ -1826,8 +1738,8 @@
                         </div>
 
                         <a
-                            href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Multivitamin%20Complex%20(45%20AZN)"
-                            target="_blank"
+                            href="#"
+                            onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Multivitamin Complex (45 AZN)'); return false;"
                             class="buy-btn"
                         >
 
@@ -1877,8 +1789,8 @@
                         </div>
 
                         <a
-                            href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Omega-3%20Fish%20Oil%20(35%20AZN)"
-                            target="_blank"
+                            href="#"
+                            onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Omega-3 Fish Oil (35 AZN)'); return false;"
                             class="buy-btn"
                         >
 
@@ -1928,8 +1840,8 @@
                         </div>
 
                         <a
-                            href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Vitamin%20D3%20+%20K2%20(30%20AZN)"
-                            target="_blank"
+                            href="#"
+                            onclick="openWhatsApp('Salam, bu məhsulu sizdən sifariş etmək istəyirəm: Vitamin D3 + K2 (30 AZN)'); return false;"
                             class="buy-btn"
                         >
 
@@ -1948,9 +1860,7 @@
         </div>
 
 
-        <!-- ============================
-             WHATSAPP ORDER
-        ============================= -->
+        <!-- WHATSAPP ORDER -->
 
         <div class="order-card">
 
@@ -1963,8 +1873,8 @@
             </p>
 
             <a
-                href="https://wa.me/994709939998?text=Salam,%20ProVitBaku-dan%20məhsul%20barədə%20məlumat%20almaq%20istəyirəm."
-                target="_blank"
+                href="#"
+                onclick="openWhatsApp('Salam, ProVitBaku-dan məhsul barədə məlumat almaq istəyirəm.'); return false;"
                 class="whatsapp-btn"
             >
 
@@ -1977,8 +1887,6 @@
 
             </a>
 
-
-            <!-- YENİ DƏSTƏK MƏLUMATLARI -->
 
             <div class="support-info">
 
@@ -2003,9 +1911,7 @@
         </div>
 
 
-        <!-- ============================
-             STORE INFO
-        ============================= -->
+        <!-- STORE INFO -->
 
         <div class="store-info">
 
@@ -2026,8 +1932,6 @@
         </div>
 
 
-        <!-- FOOTER -->
-
         <div class="footer-text">
 
             PROVITBAKU © 2026 -
@@ -2038,13 +1942,11 @@
     </div>
 
 
-    <!-- ============================
-         FLOATING WHATSAPP
-    ============================= -->
+    <!-- FLOATING WHATSAPP -->
 
     <a
-        href="https://wa.me/994709939998?text=Salam,%20ProVitBaku-dan%20məhsullar%20barədə%20məlumat%20almaq%20istəyirəm."
-        target="_blank"
+        href="#"
+        onclick="openWhatsApp('Salam, ProVitBaku-dan məhsullar barədə məlumat almaq istəyirəm.'); return false;"
         class="floating-whatsapp"
         aria-label="WhatsApp"
     >
@@ -2054,9 +1956,7 @@
     </a>
 
 
-    <!-- ============================
-         IMAGE MODAL
-    ============================= -->
+    <!-- IMAGE MODAL -->
 
     <div
         id="imageModal"
@@ -2083,15 +1983,67 @@
     </div>
 
 
-    <!-- ============================
-         JAVASCRIPT
-    ============================= -->
+    <!-- JAVASCRIPT -->
 
     <script>
 
-        /* ================================
+        /* =========================================
+           WHATSAPP SYSTEM
+           Android WhatsApp -> WhatsApp Web fallback
+        ========================================= */
+
+        const WHATSAPP_NUMBER = "994709939998";
+
+
+        function openWhatsApp(message) {
+
+            const encodedMessage =
+                encodeURIComponent(message);
+
+
+            const whatsappApp =
+                "whatsapp://send?phone=" +
+                WHATSAPP_NUMBER +
+                "&text=" +
+                encodedMessage;
+
+
+            const whatsappWeb =
+                "https://web.whatsapp.com/send?phone=" +
+                WHATSAPP_NUMBER +
+                "&text=" +
+                encodedMessage;
+
+
+            const startTime = Date.now();
+
+
+            /* Əvvəl WhatsApp tətbiqini açmağa çalış */
+
+            window.location.href = whatsappApp;
+
+
+            /*
+             * Əgər WhatsApp tətbiqi yoxdursa,
+             * bir neçə saniyə sonra WhatsApp Web açılır.
+             */
+
+            setTimeout(function() {
+
+                if (Date.now() - startTime < 2500) {
+
+                    window.location.href = whatsappWeb;
+
+                }
+
+            }, 1200);
+
+        }
+
+
+        /* =========================================
            CATEGORY
-        ================================= */
+        ========================================= */
 
         function showCategory(category, clickedCard) {
 
@@ -2135,9 +2087,9 @@
         }
 
 
-        /* ================================
+        /* =========================================
            HOME
-        ================================= */
+        ========================================= */
 
         function goHome() {
 
@@ -2161,9 +2113,10 @@
         }
 
 
-        /* ================================
-           PRODUCT SEARCH
-        ================================= */
+        /* =========================================
+           PRODUCT DATABASE
+           Axtarış üçün əlavə sözlər
+        ========================================= */
 
         const products = [
 
@@ -2171,38 +2124,112 @@
                 name: "Whey Protein Gold",
                 price: "95 AZN",
                 image: "protein1.jpg",
-                message: "Whey Protein Gold (95 AZN)"
+                message: "Whey Protein Gold (95 AZN)",
+
+                keywords: [
+                    "protein",
+                    "whey",
+                    "whey protein",
+                    "protein gold",
+                    "zülal",
+                    "zulal",
+                    "pro"
+                ]
             },
 
             {
                 name: "Pure Creatine Monohydrate",
                 price: "50 AZN",
                 image: "creatine1.jpg",
-                message: "Pure Creatine Monohydrate (50 AZN)"
+                message: "Pure Creatine Monohydrate (50 AZN)",
+
+                keywords: [
+                    "creatine",
+                    "creatin",
+                    "kreatin",
+                    "kreatine",
+                    "monohydrate",
+                    "mono",
+                    "pure creatine"
+                ]
             },
 
             {
                 name: "Multivitamin Complex",
                 price: "45 AZN",
                 image: "vitamin1.jpg",
-                message: "Multivitamin Complex (45 AZN)"
+                message: "Multivitamin Complex (45 AZN)",
+
+                keywords: [
+                    "vitamin",
+                    "vitaminler",
+                    "vitaminlər",
+                    "multivitamin",
+                    "multi vitamin",
+                    "complex",
+                    "vitamins"
+                ]
             },
 
             {
                 name: "Omega-3 Fish Oil",
                 price: "35 AZN",
                 image: "vitamin2.jpg",
-                message: "Omega-3 Fish Oil (35 AZN)"
+                message: "Omega-3 Fish Oil (35 AZN)",
+
+                keywords: [
+                    "omega",
+                    "omega3",
+                    "omega-3",
+                    "fish",
+                    "fish oil",
+                    "balıq yağı",
+                    "baliq yagi"
+                ]
             },
 
             {
                 name: "Vitamin D3 + K2",
                 price: "30 AZN",
                 image: "vitamin3.jpg",
-                message: "Vitamin D3 + K2 (30 AZN)"
+                message: "Vitamin D3 + K2 (30 AZN)",
+
+                keywords: [
+                    "d3",
+                    "d 3",
+                    "vitamin d",
+                    "vitamin d3",
+                    "k2",
+                    "d3 k2",
+                    "d3+k2",
+                    "d vitamin",
+                    "vitamin k2"
+                ]
             }
 
         ];
+
+
+        /* =========================================
+           SEARCH NORMALIZATION
+           Azərbaycan hərfləri və yazılış fərqləri
+        ========================================= */
+
+        function normalizeText(text) {
+
+            return String(text)
+                .toLowerCase()
+                .trim()
+                .replace(/ə/g, "e")
+                .replace(/ı/g, "i")
+                .replace(/ö/g, "o")
+                .replace(/ü/g, "u")
+                .replace(/ğ/g, "g")
+                .replace(/ş/g, "s")
+                .replace(/ç/g, "c")
+                .replace(/[^a-z0-9]+/g, "");
+
+        }
 
 
         const searchInput =
@@ -2218,14 +2245,20 @@
             document.getElementById('searchClear');
 
 
+        /* =========================================
+           PRODUCT SEARCH
+        ========================================= */
+
         searchInput.addEventListener(
             'input',
             function() {
 
+                const rawQuery =
+                    this.value.trim();
+
+
                 const query =
-                    this.value
-                    .trim()
-                    .toLowerCase();
+                    normalizeText(rawQuery);
 
 
                 if (query.length === 0) {
@@ -2237,18 +2270,41 @@
                     searchClear.style.display = 'none';
 
                     return;
+
                 }
 
 
                 searchClear.style.display = 'block';
 
 
+                /*
+                 * Artıq həm məhsul adını,
+                 * həm də əlavə açar sözləri yoxlayırıq.
+                 */
+
                 const results =
-                    products.filter(product =>
-                        product.name
-                        .toLowerCase()
-                        .includes(query)
-                    );
+                    products.filter(product => {
+
+                        const productName =
+                            normalizeText(product.name);
+
+
+                        if (productName.includes(query)) {
+                            return true;
+                        }
+
+
+                        return product.keywords.some(keyword => {
+
+                            return normalizeText(keyword)
+                                .includes(query) ||
+                                query.includes(
+                                    normalizeText(keyword)
+                                );
+
+                        });
+
+                    });
 
 
                 searchResults.classList.add('active');
@@ -2272,6 +2328,7 @@
                     `;
 
                     return;
+
                 }
 
 
@@ -2279,10 +2336,8 @@
                     results.map(product => {
 
                         const whatsappMessage =
-                            encodeURIComponent(
-                                "Salam, bu məhsulu sizdən sifariş etmək istəyirəm: " +
-                                product.message
-                            );
+                            "Salam, bu məhsulu sizdən sifariş etmək istəyirəm: " +
+                            product.message;
 
 
                         return `
@@ -2311,8 +2366,8 @@
                                     </div>
 
                                     <a
-                                        href="https://wa.me/994709939998?text=${whatsappMessage}"
-                                        target="_blank"
+                                        href="#"
+                                        onclick="openWhatsApp(${JSON.stringify(whatsappMessage)}); return false;"
                                         class="search-buy-btn"
                                     >
 
@@ -2334,9 +2389,9 @@
         );
 
 
-        /* ================================
+        /* =========================================
            CLEAR SEARCH
-        ================================= */
+        ========================================= */
 
         function clearSearch() {
 
@@ -2353,9 +2408,9 @@
         }
 
 
-        /* ================================
+        /* =========================================
            IMAGE MODAL
-        ================================= */
+        ========================================= */
 
         function openModal(imgSrc) {
 
@@ -2388,9 +2443,9 @@
         }
 
 
-        /* ================================
+        /* =========================================
            ESC TO CLOSE
-        ================================= */
+        ========================================= */
 
         document.addEventListener(
             'keydown',
@@ -2406,9 +2461,9 @@
         );
 
 
-        /* ================================
+        /* =========================================
            SWIPE / TOUCH FRIENDLY
-        ================================= */
+        ========================================= */
 
         let touchStartY = 0;
 
@@ -2449,6 +2504,7 @@
             },
             { passive: true }
         );
+
 
     </script>
 
