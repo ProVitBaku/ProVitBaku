@@ -115,7 +115,7 @@
             border-radius: 14px;
             padding: 12px 5px;
             text-align: center;
-            text-decoration: none;
+            cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
@@ -141,7 +141,21 @@
             color: #f1f1f1;
         }
 
-        /* Məhsullar Siyahısı Bölməsi (Vitaminlər və s. üçün) */
+        /* Məhsullar Siyahısı Bölməsi (Əvvəlcə gizli olur) */
+        .category-section {
+            display: none;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        .category-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         .section-title {
             font-size: 14px;
             font-weight: 700;
@@ -151,6 +165,16 @@
             letter-spacing: 1px;
             border-left: 3px solid #d4af37;
             padding-left: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .back-text {
+            font-size: 10px;
+            color: #aaa;
+            cursor: pointer;
+            font-weight: normal;
         }
 
         .items-container {
@@ -163,7 +187,6 @@
             padding-right: 4px;
         }
 
-        /* Scrollbar dizaynı */
         .items-container::-webkit-scrollbar {
             width: 4px;
         }
@@ -307,71 +330,118 @@
             <div class="badge-store">Online Supplement Store</div>
         </div>
 
-        <!-- Kateqoriyalar -->
+        <!-- Kateqoriya Düymələri -->
         <div class="products-grid">
-            <a href="#" class="product-card">
+            <div class="product-card" onclick="showCategory('protein')">
                 <i class="fa-solid fa-jar"></i>
                 <h4>PROTEİN</h4>
-            </a>
-            <a href="#" class="product-card">
+            </div>
+            <div class="product-card" onclick="showCategory('creatine')">
                 <i class="fa-solid fa-fire"></i>
                 <h4>CREATINE</h4>
-            </a>
-            <a href="#" class="product-card active">
+            </div>
+            <div class="product-card" onclick="showCategory('vitamins')">
                 <i class="fa-solid fa-pills"></i>
                 <h4>VITAMINS</h4>
-            </a>
+            </div>
         </div>
 
-        <!-- Məhsulların Siyahısı (Vitaminlər) -->
-        <div class="section-title">Vitamin Məhsulları</div>
-        <div class="items-container">
-            
-            <!-- Məhsul 1 -->
-            <div class="item-row">
-                <img src="vitamin1.jpg" alt="Vitamin" class="item-img">
-                <div class="item-details">
-                    <div class="item-name">Multivitamin Complex</div>
-                    <div class="item-price">45 AZN</div>
-                    <a href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Multivitamin%20Complex%20(45%20AZN)" target="_blank" class="buy-btn">
-                        <i class="fa-brands fa-whatsapp"></i> Sifariş Et
-                    </a>
+        <!-- PROTEİN Məhsulları (Gizli) -->
+        <div id="protein-section" class="category-section">
+            <div class="section-title">
+                Protein Məhsulları
+                <span class="back-text" onclick="goHome()"><i class="fa-solid fa-arrow-left"></i> Geri</span>
+            </div>
+            <div class="items-container">
+                <div class="item-row">
+                    <img src="protein1.jpg" alt="Protein" class="item-img">
+                    <div class="item-details">
+                        <div class="item-name">Whey Protein Gold</div>
+                        <div class="item-price">95 AZN</div>
+                        <a href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Whey%20Protein%20Gold%20(95%20AZN)" target="_blank" class="buy-btn">
+                            <i class="fa-brands fa-whatsapp"></i> Sifariş Et
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Məhsul 2 -->
-            <div class="item-row">
-                <img src="vitamin2.jpg" alt="Vitamin" class="item-img">
-                <div class="item-details">
-                    <div class="item-name">Omega-3 Fish Oil</div>
-                    <div class="item-price">35 AZN</div>
-                    <a href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Omega-3%20Fish%20Oil%20(35%20AZN)" target="_blank" class="buy-btn">
-                        <i class="fa-brands fa-whatsapp"></i> Sifariş Et
-                    </a>
-                </div>
-            </div>
-
-            <!-- Məhsul 3 -->
-            <div class="item-row">
-                <img src="vitamin3.jpg" alt="Vitamin" class="item-img">
-                <div class="item-details">
-                    <div class="item-name">Vitamin D3 + K2</div>
-                    <div class="item-price">30 AZN</div>
-                    <a href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Vitamin%20D3%20+%20K2%20(30%20AZN)" target="_blank" class="buy-btn">
-                        <i class="fa-brands fa-whatsapp"></i> Sifariş Et
-                    </a>
-                </div>
-            </div>
-
         </div>
 
-        <!-- Ümumi WhatsApp Sifariş Bloku -->
-        <div class="order-card">
-            <h3>Sual və Məsləhət</h3>
-            <p>Digər məhsullar üçün bizə birbaşa yazın.</p>
-            <a href="https://wa.me/994709939998?text=Salam,%20ProVitBaku-dan%20məhsul%20barədə%20məlumat%20almaq%20istəyirəm." target="_blank" class="whatsapp-btn">
-                <i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i> ÜMUMİ WHATSAPP YAZ
-            </a>
+        <!-- CREATINE Məhsulları (Gizli) -->
+        <div id="creatine-section" class="category-section">
+            <div class="section-title">
+                Creatine Məhsulları
+                <span class="back-text" onclick="goHome()"><i class="fa-solid fa-arrow-left"></i> Geri</span>
+            </div>
+            <div class="items-container">
+                <div class="item-row">
+                    <img src="creatine1.jpg" alt="Creatine" class="item-img">
+                    <div class="item-details">
+                        <div class="item-name">Pure Creatine Monohydrate</div>
+                        <div class="item-price">50 AZN</div>
+                        <a href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Pure%20Creatine%20Monohydrate%20(50%20AZN)" target="_blank" class="buy-btn">
+                            <i class="fa-brands fa-whatsapp"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VITAMINS Məhsulları (Gizli) -->
+        <div id="vitamins-section" class="category-section">
+            <div class="section-title">
+                Vitamin Məhsulları
+                <span class="back-text" onclick="goHome()"><i class="fa-solid fa-arrow-left"></i> Geri</span>
+            </div>
+            <div class="items-container">
+                
+                <!-- Məhsul 1 -->
+                <div class="item-row">
+                    <img src="vitamin1.jpg" alt="Vitamin" class="item-img">
+                    <div class="item-details">
+                        <div class="item-name">Multivitamin Complex</div>
+                        <div class="item-price">45 AZN</div>
+                        <a href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Multivitamin%20Complex%20(45%20AZN)" target="_blank" class="buy-btn">
+                            <i class="fa-brands fa-whatsapp"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Məhsul 2 -->
+                <div class="item-row">
+                    <img src="vitamin2.jpg" alt="Vitamin" class="item-img">
+                    <div class="item-details">
+                        <div class="item-name">Omega-3 Fish Oil</div>
+                        <div class="item-price">35 AZN</div>
+                        <a href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Omega-3%20Fish%20Oil%20(35%20AZN)" target="_blank" class="buy-btn">
+                            <i class="fa-brands fa-whatsapp"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Məhsul 3 -->
+                <div class="item-row">
+                    <img src="vitamin3.jpg" alt="Vitamin" class="item-img">
+                    <div class="item-details">
+                        <div class="item-name">Vitamin D3 + K2</div>
+                        <div class="item-price">30 AZN</div>
+                        <a href="https://wa.me/994709939998?text=Salam,%20bu%20məhsulu%20sizdən%20sifariş%20etmək%20istəyirəm:%20Vitamin%20D3%20+%20K2%20(30%20AZN)" target="_blank" class="buy-btn">
+                            <i class="fa-brands fa-whatsapp"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Ümumi WhatsApp Sifariş Bloku (Ana səhifədə görünür) -->
+        <div id="home-content">
+            <div class="order-card">
+                <h3>Sual və Məsləhət</h3>
+                <p>Digər məhsullar üçün bizə birbaşa yazın.</p>
+                <a href="https://wa.me/994709939998?text=Salam,%20ProVitBaku-dan%20məhsul%20barədə%20məlumat%20almaq%20istəyirəm." target="_blank" class="whatsapp-btn">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i> ÜMUMİ WHATSAPP YAZ
+                </a>
+            </div>
         </div>
 
         <!-- Əlavə məlumat -->
@@ -384,6 +454,23 @@
             PROVITBAKU &copy; 2026 - Bütün hüquqlar qorunur.
         </div>
     </div>
+
+    <script>
+        function showCategory(category) {
+            // Bütün bölmələri gizlət
+            document.querySelectorAll('.category-section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById('home-content').style.display = 'none';
+
+            // Seçilən kateqoriyanı göstər
+            document.getElementById(category + '-section').classList.add('active');
+        }
+
+        function goHome() {
+            // Bütün kateqoriyaları bağla, əsas səhifəni və ümumi düyməni aç
+            document.querySelectorAll('.category-section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById('home-content').style.display = 'block';
+        }
+    </script>
 
 </body>
 </html>
