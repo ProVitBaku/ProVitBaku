@@ -141,10 +141,11 @@
             color: #f1f1f1;
         }
 
-        /* Məhsullar Siyahısı Bölməsi - Əvvəlcə gizlidir (display: none) */
+        /* Məhsullar Siyahısı Bölməsi - Əvvəlcə gizlidir */
         .category-section {
             display: none;
             animation: fadeIn 0.4s ease-in-out;
+            margin-bottom: 15px;
         }
 
         .category-section.active {
@@ -185,8 +186,7 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
-            margin-bottom: 20px;
-            max-height: 320px;
+            max-height: 280px;
             overflow-y: auto;
             padding-right: 4px;
         }
@@ -209,13 +209,39 @@
             gap: 12px;
         }
 
+        /* Şəkil dizaynı və böyütmə effekti */
+        .img-wrapper {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+
         .item-img {
-            width: 60px;
-            height: 60px;
+            width: 100%;
+            height: 100%;
             border-radius: 10px;
             object-fit: cover;
             background: #000;
-            border: 1px solid rgba(212, 175, 55, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: 0.2s;
+        }
+
+        .img-wrapper:hover .item-img {
+            opacity: 0.85;
+        }
+
+        .zoom-icon {
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #d4af37;
+            font-size: 10px;
+            padding: 3px 5px;
+            border-radius: 4px;
+            pointer-events: none;
         }
 
         .item-details {
@@ -258,7 +284,7 @@
             font-size: 13px;
         }
 
-        /* Ümumi Sifariş Bloku */
+        /* Ümumi Sifariş Bloku (Həmişə görünsün) */
         .order-card {
             background: linear-gradient(145deg, #141414, #0a0a0a);
             border: 1px solid rgba(212, 175, 55, 0.4);
@@ -267,6 +293,7 @@
             text-align: center;
             box-shadow: 0 8px 20px rgba(0,0,0,0.5);
             margin-bottom: 15px;
+            margin-top: 15px;
         }
 
         .order-card h3 {
@@ -320,6 +347,45 @@
             margin-top: 10px;
             letter-spacing: 1px;
         }
+
+        /* Şəkili Tam Ekran Açmaq Üçü Modal (Lightbox) Stili */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 12px;
+            border: 2px solid #d4af37;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            color: #fff;
+            font-size: 28px;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -358,7 +424,10 @@
             </div>
             <div class="items-container">
                 <div class="item-row">
-                    <img src="protein1.jpg" alt="Protein" class="item-img">
+                    <div class="img-wrapper" onclick="openModal('protein1.jpg')">
+                        <img src="protein1.jpg" alt="Protein" class="item-img">
+                        <div class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
                     <div class="item-details">
                         <div class="item-name">Whey Protein Gold</div>
                         <div class="item-price">95 AZN</div>
@@ -378,7 +447,10 @@
             </div>
             <div class="items-container">
                 <div class="item-row">
-                    <img src="creatine1.jpg" alt="Creatine" class="item-img">
+                    <div class="img-wrapper" onclick="openModal('creatine1.jpg')">
+                        <img src="creatine1.jpg" alt="Creatine" class="item-img">
+                        <div class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
                     <div class="item-details">
                         <div class="item-name">Pure Creatine Monohydrate</div>
                         <div class="item-price">50 AZN</div>
@@ -400,7 +472,10 @@
                 
                 <!-- Məhsul 1 -->
                 <div class="item-row">
-                    <img src="vitamin1.jpg" alt="Vitamin" class="item-img">
+                    <div class="img-wrapper" onclick="openModal('vitamin1.jpg')">
+                        <img src="vitamin1.jpg" alt="Vitamin" class="item-img">
+                        <div class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
                     <div class="item-details">
                         <div class="item-name">Multivitamin Complex</div>
                         <div class="item-price">45 AZN</div>
@@ -412,7 +487,10 @@
 
                 <!-- Məhsul 2 -->
                 <div class="item-row">
-                    <img src="vitamin2.jpg" alt="Vitamin" class="item-img">
+                    <div class="img-wrapper" onclick="openModal('vitamin2.jpg')">
+                        <img src="vitamin2.jpg" alt="Vitamin" class="item-img">
+                        <div class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
                     <div class="item-details">
                         <div class="item-name">Omega-3 Fish Oil</div>
                         <div class="item-price">35 AZN</div>
@@ -424,7 +502,10 @@
 
                 <!-- Məhsul 3 -->
                 <div class="item-row">
-                    <img src="vitamin3.jpg" alt="Vitamin" class="item-img">
+                    <div class="img-wrapper" onclick="openModal('vitamin3.jpg')">
+                        <img src="vitamin3.jpg" alt="Vitamin" class="item-img">
+                        <div class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
                     <div class="item-details">
                         <div class="item-name">Vitamin D3 + K2</div>
                         <div class="item-price">30 AZN</div>
@@ -437,15 +518,13 @@
             </div>
         </div>
 
-        <!-- Ümumi WhatsApp Sifariş Bloku (Ana səhifədə görünür) -->
-        <div id="home-content">
-            <div class="order-card">
-                <h3>Sual və Məsləhət</h3>
-                <p>Digər məhsullar üçün bizə birbaşa yazın.</p>
-                <a href="https://wa.me/994709939998?text=Salam,%20ProVitBaku-dan%20məhsul%20barədə%20məlumat%20almaq%20istəyirəm." target="_blank" class="whatsapp-btn">
-                    <i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i> ÜMUMİ WHATSAPP YAZ
-                </a>
-            </div>
+        <!-- Ümumi WhatsApp Sifariş Bloku (Həmişə görünür) -->
+        <div class="order-card">
+            <h3>Sual və Məsləhət</h3>
+            <p>Digər məhsullar üçün bizə birbaşa yazın.</p>
+            <a href="https://wa.me/994709939998?text=Salam,%20ProVitBaku-dan%20məhsul%20barədə%20məlumat%20almaq%20istəyirəm." target="_blank" class="whatsapp-btn">
+                <i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i> ÜMUMİ WHATSAPP YAZ
+            </a>
         </div>
 
         <!-- Əlavə məlumat -->
@@ -459,20 +538,35 @@
         </div>
     </div>
 
+    <!-- Şəkili Böyük Açmaq Üçün Pəncərə (Modal) -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <img id="modalImg" src="" alt="Böyük Şəkil">
+    </div>
+
     <script>
         function showCategory(category) {
-            // Bütün məhsul bölmələrini gizlət və əsas səhifə blokunu gizlət
+            // Bütün bölmələri gizlət
             document.querySelectorAll('.category-section').forEach(sec => sec.classList.remove('active'));
-            document.getElementById('home-content').style.display = 'none';
 
-            // Yalnız seçilən kateqoriyanı göstər
+            // Seçilən kateqoriyanı göstər
             document.getElementById(category + '-section').classList.add('active');
         }
 
         function goHome() {
-            // Məhsul bölmələrini bağla, əsas səhifəni yenidən aç
+            // Bütün kateqoriyaları bağla
             document.querySelectorAll('.category-section').forEach(sec => sec.classList.remove('active'));
-            document.getElementById('home-content').style.display = 'block';
+        }
+
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImg');
+            modalImg.src = imgSrc;
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
         }
     </script>
 
