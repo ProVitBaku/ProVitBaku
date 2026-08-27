@@ -2,11 +2,11 @@
 <html lang="az">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>ProVitBaku - Premium Online Store</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -14,229 +14,250 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
         body {
-            background-color: #0b0b0b;
+            background-color: #070707;
             color: #ffffff;
-            background-image: radial-gradient(circle at center, #1a1a1a 0%, #0b0b0b 100%);
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 600px;
-            text-align: center;
-            padding: 30px 20px;
-        }
-
-        /* Logo Bölməsi */
-        .logo-box {
-            margin-bottom: 25px;
-        }
-
-        .logo-box img {
-            width: 160px;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #d4af37;
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
-        }
-
-        h1 {
-            font-size: 28px;
-            font-weight: 800;
-            color: #d4af37;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        p.subtitle {
-            color: #b3b3b3;
-            font-size: 14px;
-            margin-bottom: 30px;
-            letter-spacing: 1px;
-        }
-
-        /* Kateqoriyalar */
-        .categories {
-            display: flex;
             justify-content: center;
-            gap: 15px;
-            margin-bottom: 35px;
-            flex-wrap: wrap;
-        }
-
-        .cat-card {
-            background: rgba(25, 25, 25, 0.8);
-            border: 1px solid #333;
-            border-radius: 12px;
+            align-items: center;
             padding: 15px;
-            width: 100px;
-            text-align: center;
-            transition: 0.3s;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 50% 100%, rgba(20, 20, 20, 1) 0%, #070707 100%);
         }
 
-        .cat-card:hover {
-            border-color: #d4af37;
-            transform: translateY(-3px);
-        }
-
-        .cat-card i {
-            font-size: 24px;
-            color: #d4af37;
-            margin-bottom: 8px;
-        }
-
-        .cat-card span {
-            display: block;
-            font-size: 11px;
-            font-weight: 600;
-            color: #ddd;
-            letter-spacing: 0.5px;
-        }
-
-        /* Əlaqə və WhatsApp Bölməsi */
-        .contact-box {
-            background: linear-gradient(145deg, #161616, #0d0d0d);
-            border: 1px solid #d4af37;
-            border-radius: 20px;
+        .phone-container {
+            width: 100%;
+            max-width: 440px;
+            background: rgba(15, 15, 15, 0.95);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 28px;
             padding: 30px 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.1);
             position: relative;
             overflow: hidden;
+            backdrop-filter: blur(10px);
         }
 
-        .contact-box::before {
+        .phone-container::before {
             content: '';
             position: absolute;
             top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
+            left: 20%;
+            width: 60%;
+            height: 2px;
             background: linear-gradient(90deg, transparent, #d4af37, transparent);
         }
 
-        .contact-box h3 {
-            font-size: 18px;
-            color: #fff;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-
-        .contact-box p {
-            color: #aaa;
-            font-size: 13px;
+        .header-section {
+            text-align: center;
             margin-bottom: 25px;
         }
 
-        /* WhatsApp Düyməsi */
+        .logo-wrapper {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            padding: 3px;
+            background: linear-gradient(135deg, #d4af37, #8a6f23, #d4af37);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .logo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            background: #000;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        h1 span {
+            color: #d4af37;
+        }
+
+        .badge-store {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            color: #d4af37;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .product-card {
+            background: rgba(25, 25, 25, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 15px 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            border-color: #d4af37;
+            transform: translateY(-3px);
+            background: rgba(35, 35, 35, 0.9);
+        }
+
+        .product-card i {
+            font-size: 22px;
+            color: #d4af37;
+            margin-bottom: 8px;
+        }
+
+        .product-card h4 {
+            font-size: 11px;
+            font-weight: 700;
+            color: #f1f1f1;
+            letter-spacing: 0.5px;
+        }
+
+        .order-card {
+            background: linear-gradient(145deg, #141414, #0a0a0a);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+        }
+
+        .order-card h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+
+        .order-card p {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 18px;
+        }
+
         .whatsapp-btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
-            background: linear-gradient(135deg, #25d366, #1ebe57);
+            gap: 10px;
+            background: linear-gradient(135deg, #25d366, #1da853);
             color: #ffffff;
             text-decoration: none;
-            padding: 16px 25px;
-            border-radius: 50px;
+            padding: 14px 20px;
+            border-radius: 14px;
             font-weight: 700;
-            font-size: 16px;
-            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
-            transition: 0.3s ease;
-            margin-bottom: 20px;
+            font-size: 15px;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+            transition: all 0.3s ease;
+            width: 100%;
         }
 
-        .whatsapp-btn:hover {
-            transform: scale(1.02);
-            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        .whatsapp-btn:active {
+            transform: scale(0.98);
         }
 
         .whatsapp-btn i {
-            font-size: 22px;
+            font-size: 20px;
         }
 
-        .info-details {
-            font-size: 12px;
-            color: #888;
-            line-height: 1.6;
-            border-top: 1px solid #222;
+        .store-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: #777;
             padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
         }
 
-        .info-details span {
+        .store-info span {
             color: #d4af37;
+            font-weight: 600;
         }
 
-        /* Footer */
-        footer {
-            margin-top: 20px;
-            font-size: 12px;
+        .footer-text {
+            text-align: center;
+            font-size: 10px;
             color: #555;
+            margin-top: 15px;
             letter-spacing: 1px;
-        }
-
-        footer span {
-            color: #d4af37;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="phone-container">
         <!-- Logo və Başlıq -->
-        <div class="logo-box">
-            <!-- Loqonun adını GitHub-a yüklədiyin şəkil faylının adı ilə əvəz et (məsələn: logo.png) -->
-            <img src="logo.png" alt="ProVitBaku Logo">
+        <div class="header-section">
+            <div class="logo-wrapper">
+                <img src="logo.png" alt="ProVitBaku Logo">
+            </div>
+            <h1>ProVit<span>Baku</span></h1>
+            <div class="badge-store">Online Supplement Store</div>
         </div>
-        <h1>ProVitBaku</h1>
-        <p class="subtitle">PREMIUM ONLINE SUPPLEMENT STORE</p>
 
-        <!-- Kateqoriya İkonları -->
-        <div class="categories">
-            <div class="cat-card">
+        <!-- Məhsul Kateqoriyaları -->
+        <div class="products-grid">
+            <div class="product-card">
                 <i class="fa-solid fa-jar"></i>
-                <span>PROTEIN</span>
+                <h4>PROTEIN</h4>
             </div>
-            <div class="cat-card">
-                <i class="fa-solid fa-mortar-pestle"></i>
-                <span>CREATINE</span>
+            <div class="product-card">
+                <i class="fa-solid fa-fire"></i>
+                <h4>CREATINE</h4>
             </div>
-            <div class="cat-card">
-                <i class="fa-solid fa-capsules"></i>
-                <span>VITAMINS</span>
+            <div class="product-card">
+                <i class="fa-solid fa-pills"></i>
+                <h4>VITAMINS</h4>
             </div>
         </div>
 
-        <!-- WhatsApp Əlaqə Qutusu -->
-        <div class="contact-box">
-            <h3>Sifariş və Məsləhət üçün Bizə Yazın</h3>
-            <p>Məhsullar haqqında məlumat almaq və sürətli sifariş üçün birbaşa əlaqə saxlayın.</p>
+        <!-- WhatsApp Sifariş Bloku (Nömrəniz birbaşa daxil edildi) -->
+        <div class="order-card">
+            <h3>Sifariş və Məsləhət</h3>
+            <p>Məhsullar və qiymətlər üçün birbaşa əlaqə saxlayın.</p>
             
-            <!-- WhatsApp Linki (Öz nömrənizi 994... formatında yazın) -->
-            <a href="https://wa.me/994709939998?text=Salam,%20ProVitBaku-dan%20məhsul%20sifariş%20etmək%20istəyirəm." target="_blank" class="whatsapp-btn">
-                <i class="fa-brands fa-whatsapp"></i> WHATSAPP İLƏ SİFARİŞ ET
+            <a href="https://wa.me/994709939998?text=Salam,%20ProVitBaku-dan%20məhsul%20barədə%20məlumat%20almaq%20istəyirəm." target="_blank" class="whatsapp-btn">
+                <i class="fa-brands fa-whatsapp"></i> WHATSAPP İLƏ YAZ
             </a>
+        </div>
 
-            <div class="info-details">
-                <div>Telefon: <span>+994 70 993 99 98</span></div>
-                <div>Ünvan: <span>Bakı, Azərbaycan 🇦🇿</span></div>
-            </div>
+        <!-- Əlavə məlumat -->
+        <div class="store-info">
+            <div>📍 <span>Bakı, Azərbaycan</span></div>
+            <div>⚡ <span>Sürətli Çatdırılma</span></div>
+        </div>
+
+        <div class="footer-text">
+            PROVITBAKU &copy; 2026 - Bütün hüquqlar qorunur.
         </div>
     </div>
-
-    <footer>
-        PROVITBAKU &copy; 2026 - Bütün hüquqlar qorunur.
-    </footer>
 
 </body>
 </html>
