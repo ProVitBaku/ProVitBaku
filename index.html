@@ -103,26 +103,33 @@
             margin-bottom: 20px;
         }
 
+        /* Kateqoriya Grid (Kliklənən) */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .product-card {
             background: rgba(25, 25, 25, 0.7);
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 16px;
-            padding: 15px 10px;
+            padding: 15px 8px;
             text-align: center;
+            text-decoration: none;
             transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .product-card:hover {
             border-color: #d4af37;
             transform: translateY(-3px);
             background: rgba(35, 35, 35, 0.9);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.2);
         }
 
         .product-card i {
@@ -136,6 +143,13 @@
             font-weight: 700;
             color: #f1f1f1;
             letter-spacing: 0.5px;
+        }
+
+        .product-card span {
+            font-size: 9px;
+            color: #25d366;
+            margin-top: 4px;
+            font-weight: 600;
         }
 
         .order-card {
@@ -222,26 +236,29 @@
             <div class="badge-store">Online Supplement Store</div>
         </div>
 
-        <!-- Məhsul Kateqoriyaları -->
+        <!-- Kateqoriyalar (Birbaşa WhatsApp-a bağlandı) -->
         <div class="products-grid">
-            <div class="product-card">
+            <a href="https://wa.me/994709939998?text=Salam,%20sizdən%20protein%20sifariş%20vermək%20istəyirəm." target="_blank" class="product-card">
                 <i class="fa-solid fa-jar"></i>
-                <h4>PROTEIN</h4>
-            </div>
-            <div class="product-card">
+                <h4>PROTEİN</h4>
+                <span>Sifariş Et</span>
+            </a>
+            <a href="https://wa.me/994709939998?text=Salam,%20sizdən%20creatin%20sifariş%20vermək%20istəyirəm." target="_blank" class="product-card">
                 <i class="fa-solid fa-fire"></i>
                 <h4>CREATINE</h4>
-            </div>
-            <div class="product-card">
+                <span>Sifariş Et</span>
+            </a>
+            <a href="https://wa.me/994709939998?text=Salam,%20sizdən%20vitamin%20sifariş%20vermək%20istəyirəm." target="_blank" class="product-card">
                 <i class="fa-solid fa-pills"></i>
                 <h4>VITAMINS</h4>
-            </div>
+                <span>Sifariş Et</span>
+            </a>
         </div>
 
-        <!-- WhatsApp Sifariş Bloku (Nömrəniz birbaşa daxil edildi) -->
+        <!-- Ümumi WhatsApp Sifariş Bloku -->
         <div class="order-card">
             <h3>Sifariş və Məsləhət</h3>
-            <p>Məhsullar və qiymətlər üçün birbaşa əlaqə saxlayın.</p>
+            <p>Digər məhsullar və məsləhət üçün bizə yazın.</p>
             
             <a href="https://wa.me/994709939998?text=Salam,%20ProVitBaku-dan%20məhsul%20barədə%20məlumat%20almaq%20istəyirəm." target="_blank" class="whatsapp-btn">
                 <i class="fa-brands fa-whatsapp"></i> WHATSAPP İLƏ YAZ
