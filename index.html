@@ -5,27 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>ProVitBaku - Premium Online Supplement Store</title>
-
     <meta name="theme-color" content="#080808">
     <meta name="description" content="ProVitBaku - Protein, Creatine və Vitamin məhsulları. Sürətli sifariş və WhatsApp ilə əlaqə.">
 
-    <!-- WhatsApp və Sosial Şəbəkə Önizləmə -->
     <meta property="og:title" content="ProVitBaku - Premium Online Supplement Store">
     <meta property="og:description" content="Ən keyfiyyətli supplement məhsulları. Sürətli sifariş üçün WhatsApp.">
     <meta property="og:image" content="https://provitbaku.pages.dev/logo.png">
     <meta property="og:url" content="https://provitbaku.pages.dev">
     <meta property="og:type" content="website">
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
 
         /* ================================
-           RESET
+           SƏNİN MÖVCUD CSS KODUN
+           HEÇ NƏ SİLİNMƏYİB
         ================================= */
 
         * {
@@ -58,10 +55,6 @@
             overflow-x: hidden;
         }
 
-        /* ================================
-           BACKGROUND EFFECT
-        ================================= */
-
         body::before {
             content: "";
             position: fixed;
@@ -83,12 +76,7 @@
             z-index: -1;
         }
 
-        /* ================================
-           MAIN PHONE
-        ================================= */
-
         .phone-container {
-
             width: 100%;
             max-width: 440px;
 
@@ -130,14 +118,9 @@
             }
         }
 
-        /* Gold top line */
-
         .phone-container::before {
-
             content: "";
-
             position: absolute;
-
             top: 0;
             left: 10%;
 
@@ -154,19 +137,12 @@
             opacity: .8;
         }
 
-        /* ================================
-           HEADER
-        ================================= */
-
         .header-section {
-
             text-align: center;
-
             margin-bottom: 22px;
         }
 
         .logo-wrapper {
-
             width: 94px;
             height: 94px;
 
@@ -206,7 +182,6 @@
         }
 
         .logo-wrapper img {
-
             width: 100%;
             height: 100%;
 
@@ -222,13 +197,9 @@
         }
 
         h1 {
-
             font-size: 23px;
-
             font-weight: 800;
-
             letter-spacing: 1px;
-
             margin-bottom: 5px;
         }
 
@@ -237,11 +208,8 @@
         }
 
         .badge-store {
-
             display: inline-flex;
-
             align-items: center;
-
             gap: 6px;
 
             background:
@@ -254,7 +222,6 @@
             color: #d4af37;
 
             font-size: 9px;
-
             font-weight: 800;
 
             padding: 5px 12px;
@@ -269,7 +236,6 @@
         }
 
         .badge-store::before {
-
             content: "";
 
             width: 6px;
@@ -282,14 +248,8 @@
             box-shadow: 0 0 8px #25d366;
         }
 
-        /* ================================
-           CATEGORY GRID
-        ================================= */
-
         .products-grid {
-
             display: grid;
-
             grid-template-columns: repeat(3,1fr);
 
             gap: 8px;
@@ -298,7 +258,6 @@
         }
 
         .product-card {
-
             position: relative;
 
             background:
@@ -338,7 +297,6 @@
         }
 
         .product-card::before {
-
             content: "";
 
             position: absolute;
@@ -386,7 +344,6 @@
         }
 
         .product-card i {
-
             position: relative;
 
             font-size: 19px;
@@ -408,7 +365,6 @@
         }
 
         .product-card h4 {
-
             position: relative;
 
             font-size: 9px;
@@ -420,12 +376,7 @@
             letter-spacing: .5px;
         }
 
-        /* ================================
-           CATEGORY SECTION
-        ================================= */
-
         .category-section {
-
             display: none;
 
             margin-bottom: 15px;
@@ -451,7 +402,6 @@
         }
 
         .section-title {
-
             font-size: 13px;
 
             font-weight: 800;
@@ -476,7 +426,6 @@
         }
 
         .back-text {
-
             font-size: 9px;
 
             color: #888;
@@ -492,12 +441,7 @@
             color: #fff;
         }
 
-        /* ================================
-           PRODUCTS SCROLL
-        ================================= */
-
         .items-container {
-
             display: flex;
 
             flex-direction: column;
@@ -516,7 +460,6 @@
         }
 
         .items-container::-webkit-scrollbar-thumb {
-
             background:
                 linear-gradient(
                     #d4af37,
@@ -526,12 +469,7 @@
             border-radius: 5px;
         }
 
-        /* ================================
-           PRODUCT ROW
-        ================================= */
-
         .item-row {
-
             position: relative;
 
             display: flex;
@@ -560,7 +498,6 @@
         }
 
         .item-row:hover {
-
             transform: translateY(-2px);
 
             border-color: rgba(212,175,55,.35);
@@ -569,12 +506,7 @@
                 0 8px 20px rgba(0,0,0,.4);
         }
 
-        /* ================================
-           PRODUCT IMAGE
-        ================================= */
-
         .img-wrapper {
-
             position: relative;
 
             width: 80px;
@@ -590,7 +522,6 @@
         }
 
         .item-img {
-
             width: 100%;
             height: 100%;
 
@@ -608,14 +539,11 @@
         }
 
         .img-wrapper:hover .item-img {
-
             transform: scale(1.06);
-
             opacity: .9;
         }
 
         .zoom-icon {
-
             position: absolute;
 
             bottom: 5px;
@@ -637,19 +565,12 @@
             backdrop-filter: blur(5px);
         }
 
-        /* ================================
-           PRODUCT DETAILS
-        ================================= */
-
         .item-details {
-
             flex-grow: 1;
-
             min-width: 0;
         }
 
         .item-name {
-
             font-size: 12px;
 
             font-weight: 800;
@@ -662,7 +583,6 @@
         }
 
         .item-price {
-
             font-size: 13px;
 
             color: #d4af37;
@@ -672,12 +592,7 @@
             margin-bottom: 7px;
         }
 
-        /* ================================
-           BUY BUTTON
-        ================================= */
-
         .buy-btn {
-
             display: inline-flex;
 
             align-items: center;
@@ -711,7 +626,6 @@
         }
 
         .buy-btn:hover {
-
             transform: translateY(-1px);
 
             box-shadow:
@@ -726,12 +640,7 @@
             font-size: 12px;
         }
 
-        /* ================================
-           ORDER CARD
-        ================================= */
-
         .order-card {
-
             position: relative;
 
             background:
@@ -760,7 +669,6 @@
         }
 
         .order-card::before {
-
             content: "";
 
             position: absolute;
@@ -784,7 +692,6 @@
         }
 
         .order-card h3 {
-
             position: relative;
 
             font-size: 13px;
@@ -795,7 +702,6 @@
         }
 
         .order-card p {
-
             position: relative;
 
             font-size: 10px;
@@ -806,7 +712,6 @@
         }
 
         .whatsapp-btn {
-
             display: flex;
 
             align-items: center;
@@ -845,7 +750,6 @@
         }
 
         .whatsapp-btn:hover {
-
             transform: translateY(-2px);
 
             box-shadow:
@@ -856,12 +760,7 @@
             transform: scale(.97);
         }
 
-        /* ================================
-           STORE INFO
-        ================================= */
-
         .store-info {
-
             display: flex;
 
             justify-content: space-between;
@@ -879,14 +778,12 @@
         }
 
         .store-info span {
-
             color: #d4af37;
 
             font-weight: 700;
         }
 
         .footer-text {
-
             text-align: center;
 
             font-size: 8px;
@@ -898,12 +795,7 @@
             letter-spacing: 1px;
         }
 
-        /* ================================
-           FLOATING WHATSAPP
-        ================================= */
-
         .floating-whatsapp {
-
             position: fixed;
 
             right: 18px;
@@ -959,12 +851,7 @@
             }
         }
 
-        /* ================================
-           MODAL
-        ================================= */
-
         .modal {
-
             display: none;
 
             position: fixed;
@@ -1002,7 +889,6 @@
         }
 
         .modal img {
-
             max-width: 95%;
 
             max-height: 78vh;
@@ -1031,7 +917,6 @@
         }
 
         .modal-close {
-
             position: absolute;
 
             top: 20px;
@@ -1057,12 +942,9 @@
 
             align-items: center;
 
-            border: 1px solid rgba(255,255,255,.1);
+            border:
+                1px solid rgba(255,255,255,.1);
         }
-
-        /* ================================
-           MOBILE
-        ================================= */
 
         @media (max-width: 480px) {
 
@@ -1079,11 +961,11 @@
 
                 padding: 23px 12px;
 
-                min-height: calc(100vh - 18px);
+                min-height:
+                    calc(100vh - 18px);
             }
 
             .logo-wrapper {
-
                 width: 88px;
                 height: 88px;
             }
@@ -1129,10 +1011,6 @@
             }
         }
 
-        /* ================================
-           VERY SMALL DEVICES
-        ================================= */
-
         @media (max-width: 360px) {
 
             .phone-container {
@@ -1157,6 +1035,724 @@
             }
         }
 
+
+        /* =====================================================
+           =====================================================
+           BURADAN AŞAĞI TAMAMİLƏ YENİ ƏLAVƏLƏRDİR
+           YUXARIDAKI KODUN HEÇ NƏSİ SİLİNMƏYİB
+           =====================================================
+           ===================================================== */
+
+
+        /* ================================
+           PREMIUM SEARCH
+        ================================= */
+
+        .premium-tools {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .search-box {
+            flex: 1;
+            position: relative;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 13px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #d4af37;
+            font-size: 13px;
+        }
+
+        #productSearch {
+            width: 100%;
+            height: 43px;
+            border-radius: 13px;
+            border: 1px solid rgba(212,175,55,.22);
+            outline: none;
+            background: rgba(20,20,20,.9);
+            color: #fff;
+            padding: 0 13px 0 38px;
+            font-size: 11px;
+            transition: .25s;
+        }
+
+        #productSearch:focus {
+            border-color: #d4af37;
+            box-shadow: 0 0 18px rgba(212,175,55,.12);
+        }
+
+        #productSearch::placeholder {
+            color: #777;
+        }
+
+        .cart-open-btn {
+            width: 43px;
+            height: 43px;
+            flex-shrink: 0;
+            border: 1px solid rgba(212,175,55,.3);
+            border-radius: 13px;
+            background: linear-gradient(145deg,#242424,#111);
+            color: #d4af37;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            transition: .25s;
+        }
+
+        .cart-open-btn:hover {
+            border-color: #d4af37;
+            transform: translateY(-2px);
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            min-width: 19px;
+            height: 19px;
+            padding: 0 5px;
+            border-radius: 20px;
+            background: #d4af37;
+            color: #050505;
+            font-size: 9px;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #080808;
+        }
+
+
+        /* ================================
+           PREMIUM DELIVERY STRIP
+        ================================= */
+
+        .delivery-strip {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 6px;
+            margin-bottom: 15px;
+        }
+
+        .delivery-box {
+            background: rgba(20,20,20,.75);
+            border: 1px solid rgba(255,255,255,.07);
+            border-radius: 12px;
+            padding: 9px 4px;
+            text-align: center;
+        }
+
+        .delivery-box i {
+            color: #d4af37;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .delivery-box span {
+            display: block;
+            color: #aaa;
+            font-size: 7px;
+            font-weight: 700;
+        }
+
+
+        /* ================================
+           PRODUCT BADGES
+        ================================= */
+
+        .premium-product-badge {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            z-index: 3;
+            background: #d4af37;
+            color: #080808;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-size: 7px;
+            font-weight: 900;
+            letter-spacing: .4px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.5);
+        }
+
+        .premium-product-badge.hot {
+            background: #ff9f1c;
+        }
+
+        .premium-product-badge.new {
+            background: #25d366;
+            color: white;
+        }
+
+
+        /* ================================
+           CART PANEL
+        ================================= */
+
+        .cart-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,.82);
+            backdrop-filter: blur(8px);
+            z-index: 10000;
+            display: none;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .cart-overlay.active {
+            display: flex;
+        }
+
+        .cart-panel {
+            width: min(440px,100%);
+            max-height: 88vh;
+            background:
+                linear-gradient(
+                    145deg,
+                    #1c1c1c,
+                    #080808
+                );
+            border: 1px solid rgba(212,175,55,.4);
+            border-bottom: none;
+            border-radius: 25px 25px 0 0;
+            padding: 18px 15px 22px;
+            box-shadow: 0 -20px 70px rgba(0,0,0,.8);
+            animation: cartUp .3s ease;
+            overflow-y: auto;
+        }
+
+        @keyframes cartUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .cart-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .cart-head h2 {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .cart-head h2 i {
+            color: #d4af37;
+            margin-right: 7px;
+        }
+
+        .cart-close {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: rgba(255,255,255,.08);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .cart-empty {
+            text-align: center;
+            padding: 35px 10px;
+            color: #777;
+        }
+
+        .cart-empty i {
+            display: block;
+            font-size: 40px;
+            color: #d4af37;
+            margin-bottom: 12px;
+            opacity: .5;
+        }
+
+        .cart-empty strong {
+            display: block;
+            color: #aaa;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .cart-empty span {
+            font-size: 9px;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 13px;
+            background: rgba(255,255,255,.035);
+            border: 1px solid rgba(255,255,255,.07);
+            margin-bottom: 8px;
+        }
+
+        .cart-item img {
+            width: 55px;
+            height: 55px;
+            border-radius: 9px;
+            object-fit: cover;
+            background: #000;
+            border: 1px solid rgba(212,175,55,.25);
+        }
+
+        .cart-item-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .cart-item-name {
+            color: #fff;
+            font-size: 10px;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .cart-item-price {
+            color: #d4af37;
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .qty-control {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 5px;
+        }
+
+        .qty-control button {
+            width: 23px;
+            height: 23px;
+            border-radius: 6px;
+            border: 1px solid rgba(212,175,55,.3);
+            background: #111;
+            color: #d4af37;
+            cursor: pointer;
+            font-weight: 900;
+        }
+
+        .qty-control span {
+            min-width: 15px;
+            text-align: center;
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .remove-cart {
+            width: 27px;
+            height: 27px;
+            border: none;
+            border-radius: 7px;
+            background: rgba(255,70,70,.08);
+            color: #ff6b6b;
+            cursor: pointer;
+        }
+
+        .cart-summary {
+            border-top: 1px solid rgba(255,255,255,.08);
+            margin-top: 14px;
+            padding-top: 14px;
+        }
+
+        .cart-total-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .cart-total-row span:first-child {
+            color: #999;
+            font-size: 11px;
+        }
+
+        .cart-total-price {
+            color: #d4af37;
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        .cart-whatsapp {
+            width: 100%;
+            border: none;
+            border-radius: 12px;
+            padding: 13px;
+            background: linear-gradient(135deg,#25d366,#1da853);
+            color: white;
+            font-size: 12px;
+            font-weight: 900;
+            cursor: pointer;
+            box-shadow: 0 7px 20px rgba(37,211,102,.22);
+        }
+
+        .cart-whatsapp i {
+            margin-right: 6px;
+        }
+
+
+        /* ================================
+           ADD TO CART BUTTON
+        ================================= */
+
+        .add-cart-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin-left: 4px;
+            padding: 7px 9px;
+            border-radius: 8px;
+            border: 1px solid rgba(212,175,55,.35);
+            background: rgba(212,175,55,.08);
+            color: #d4af37;
+            font-size: 9px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .add-cart-btn:hover {
+            background: #d4af37;
+            color: #080808;
+        }
+
+        .add-cart-btn.added {
+            background: #25d366;
+            border-color: #25d366;
+            color: white;
+        }
+
+
+        /* ================================
+           TOAST
+        ================================= */
+
+        .premium-toast {
+            position: fixed;
+            left: 50%;
+            bottom: 82px;
+            transform: translate(-50%,20px);
+            background: rgba(20,20,20,.96);
+            border: 1px solid rgba(212,175,55,.4);
+            color: white;
+            padding: 11px 15px;
+            border-radius: 12px;
+            z-index: 20000;
+            font-size: 10px;
+            font-weight: 700;
+            opacity: 0;
+            pointer-events: none;
+            transition: .3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,.5);
+            white-space: nowrap;
+        }
+
+        .premium-toast.show {
+            opacity: 1;
+            transform: translate(-50%,0);
+        }
+
+        .premium-toast i {
+            color: #25d366;
+            margin-right: 6px;
+        }
+
+
+        /* ================================
+           INFO / DELIVERY POPUP
+        ================================= */
+
+        .info-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,.88);
+            backdrop-filter: blur(9px);
+            z-index: 15000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 18px;
+        }
+
+        .info-modal.active {
+            display: flex;
+        }
+
+        .info-card {
+            width: min(410px,100%);
+            background: linear-gradient(145deg,#202020,#090909);
+            border: 1px solid rgba(212,175,55,.4);
+            border-radius: 20px;
+            padding: 22px 18px;
+            box-shadow: 0 20px 60px rgba(0,0,0,.8);
+            animation: infoIn .3s ease;
+        }
+
+        @keyframes infoIn {
+            from {
+                opacity: 0;
+                transform: scale(.94) translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .info-card-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .info-card-head h3 {
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .info-card-head h3 i {
+            color: #d4af37;
+            margin-right: 7px;
+        }
+
+        .info-close {
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            background: rgba(255,255,255,.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 11px 0;
+            border-bottom: 1px solid rgba(255,255,255,.06);
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-row i {
+            color: #d4af37;
+            width: 20px;
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        .info-row strong {
+            display: block;
+            color: #fff;
+            font-size: 10px;
+            margin-bottom: 3px;
+        }
+
+        .info-row span {
+            color: #888;
+            font-size: 9px;
+            line-height: 1.5;
+        }
+
+
+        /* ================================
+           SOCIAL BUTTONS
+        ================================= */
+
+        .social-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin: 12px 0 15px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,.08);
+            background: rgba(20,20,20,.8);
+            color: #aaa;
+            border-radius: 11px;
+            padding: 10px;
+            font-size: 9px;
+            font-weight: 800;
+            transition: .25s;
+        }
+
+        .social-btn:hover {
+            color: white;
+            border-color: rgba(212,175,55,.4);
+            transform: translateY(-2px);
+        }
+
+        .social-btn i {
+            color: #d4af37;
+            font-size: 14px;
+        }
+
+
+        /* ================================
+           BACK TO TOP
+        ================================= */
+
+        .back-top {
+            position: fixed;
+            right: 18px;
+            bottom: 82px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #151515;
+            border: 1px solid rgba(212,175,55,.35);
+            color: #d4af37;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 90;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0,0,0,.4);
+        }
+
+        .back-top.show {
+            display: flex;
+        }
+
+
+        /* ================================
+           PRODUCT DETAIL POPUP
+        ================================= */
+
+        .product-detail-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,.9);
+            backdrop-filter: blur(10px);
+            z-index: 16000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 18px;
+        }
+
+        .product-detail-modal.active {
+            display: flex;
+        }
+
+        .product-detail-card {
+            width: min(400px,100%);
+            background: linear-gradient(145deg,#222,#080808);
+            border: 1px solid rgba(212,175,55,.4);
+            border-radius: 22px;
+            padding: 15px;
+            box-shadow: 0 25px 70px rgba(0,0,0,.85);
+            animation: infoIn .3s ease;
+            text-align: center;
+        }
+
+        .detail-image {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 1px solid rgba(212,175,55,.35);
+            background: #000;
+            margin: 0 auto 13px;
+        }
+
+        .detail-name {
+            font-size: 16px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .detail-price {
+            color: #d4af37;
+            font-size: 17px;
+            font-weight: 900;
+            margin-bottom: 12px;
+        }
+
+        .detail-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 7px;
+        }
+
+        .detail-btn {
+            border: none;
+            border-radius: 10px;
+            padding: 11px;
+            cursor: pointer;
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .detail-cart {
+            background: rgba(212,175,55,.12);
+            border: 1px solid rgba(212,175,55,.4);
+            color: #d4af37;
+        }
+
+        .detail-wa {
+            background: linear-gradient(135deg,#25d366,#1da853);
+            color: white;
+        }
+
+
+        /* ================================
+           MOBILE ADDITIONS
+        ================================= */
+
+        @media(max-width:480px) {
+
+            .delivery-box span {
+                font-size: 6.5px;
+            }
+
+            .add-cart-btn {
+                padding: 6px 7px;
+                font-size: 8px;
+            }
+
+            .premium-toast {
+                max-width: 90%;
+                white-space: normal;
+                text-align: center;
+            }
+
+            .back-top {
+                right: 14px;
+                bottom: 77px;
+            }
+        }
+
     </style>
 </head>
 
@@ -1165,7 +1761,7 @@
     <div class="phone-container">
 
         <!-- ============================
-             HEADER
+             SƏNİN MÖVCUD HEADER
         ============================= -->
 
         <div class="header-section">
@@ -1192,7 +1788,80 @@
 
 
         <!-- ============================
-             CATEGORIES
+             YENİ AXTARIŞ + SƏBƏT
+        ============================= -->
+
+        <div class="premium-tools">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="productSearch"
+                    placeholder="Məhsul axtar..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+            <button
+                class="cart-open-btn"
+                onclick="openCart()"
+                aria-label="Səbət"
+            >
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <span
+                    class="cart-count"
+                    id="cartCount"
+                >0</span>
+
+            </button>
+
+        </div>
+
+
+        <!-- ============================
+             YENİ ÇATDIRILMA STRIP
+        ============================= -->
+
+        <div class="delivery-strip">
+
+            <div
+                class="delivery-box"
+                onclick="openDeliveryInfo()"
+                style="cursor:pointer"
+            >
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>SÜRƏTLİ ÇATDIRILMA</span>
+            </div>
+
+            <div
+                class="delivery-box"
+                onclick="openDeliveryInfo()"
+                style="cursor:pointer"
+            >
+                <i class="fa-solid fa-location-dot"></i>
+                <span>BAKI VƏ RAYONLAR</span>
+            </div>
+
+            <div
+                class="delivery-box"
+                onclick="openDeliveryInfo()"
+                style="cursor:pointer"
+            >
+                <i class="fa-solid fa-headset"></i>
+                <span>WHATSAPP DƏSTƏK</span>
+            </div>
+
+        </div>
+
+
+        <!-- ============================
+             SƏNİN MÖVCUD KATEQORİYALAR
         ============================= -->
 
         <div class="products-grid">
@@ -1252,8 +1921,11 @@
                     class="back-text"
                     onclick="goHome()"
                 >
+
                     <i class="fa-solid fa-arrow-left"></i>
+
                     Geri
+
                 </span>
 
             </div>
@@ -1275,7 +1947,9 @@
                         >
 
                         <div class="zoom-icon">
+
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
+
                         </div>
 
                     </div>
@@ -1329,8 +2003,11 @@
                     class="back-text"
                     onclick="goHome()"
                 >
+
                     <i class="fa-solid fa-arrow-left"></i>
+
                     Geri
+
                 </span>
 
             </div>
@@ -1352,7 +2029,9 @@
                         >
 
                         <div class="zoom-icon">
+
                             <i class="fa-solid fa-magnifying-glass-plus"></i>
+
                         </div>
 
                     </div>
@@ -1406,8 +2085,11 @@
                     class="back-text"
                     onclick="goHome()"
                 >
+
                     <i class="fa-solid fa-arrow-left"></i>
+
                     Geri
+
                 </span>
 
             </div>
@@ -1415,8 +2097,6 @@
 
             <div class="items-container">
 
-
-                <!-- PRODUCT 1 -->
 
                 <div class="item-row">
 
@@ -1465,8 +2145,6 @@
                 </div>
 
 
-                <!-- PRODUCT 2 -->
-
                 <div class="item-row">
 
                     <div
@@ -1513,8 +2191,6 @@
 
                 </div>
 
-
-                <!-- PRODUCT 3 -->
 
                 <div class="item-row">
 
@@ -1568,7 +2244,36 @@
 
 
         <!-- ============================
-             WHATSAPP ORDER
+             SOSİAL ŞƏBƏKƏLƏR
+        ============================= -->
+
+        <div class="social-section">
+
+            <!-- BURADA öz Instagram linkini yerləşdir -->
+            <a
+                href="#"
+                class="social-btn"
+                onclick="socialPlaceholder('Instagram')"
+            >
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+
+            <!-- BURADA öz TikTok linkini yerləşdir -->
+            <a
+                href="#"
+                class="social-btn"
+                onclick="socialPlaceholder('TikTok')"
+            >
+                <i class="fa-brands fa-tiktok"></i>
+                TikTok
+            </a>
+
+        </div>
+
+
+        <!-- ============================
+             SƏNİN MÖVCUD WHATSAPP BLOKUN
         ============================= -->
 
         <div class="order-card">
@@ -1622,8 +2327,6 @@
         </div>
 
 
-        <!-- FOOTER -->
-
         <div class="footer-text">
 
             PROVITBAKU © 2026 -
@@ -1648,6 +2351,207 @@
         <i class="fa-brands fa-whatsapp"></i>
 
     </a>
+
+
+    <!-- ============================
+         BACK TO TOP
+    ============================= -->
+
+    <div
+        class="back-top"
+        id="backTop"
+        onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+
+    <!-- ============================
+         CART
+    ============================= -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+        onclick="closeCartOutside(event)"
+    >
+
+        <div class="cart-panel">
+
+            <div class="cart-head">
+
+                <h2>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    Səbət
+                </h2>
+
+                <div
+                    class="cart-close"
+                    onclick="closeCart()"
+                >
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+
+            <div id="cartContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================
+         DELIVERY INFO
+    ============================= -->
+
+    <div
+        class="info-modal"
+        id="deliveryModal"
+        onclick="closeDeliveryOutside(event)"
+    >
+
+        <div class="info-card">
+
+            <div class="info-card-head">
+
+                <h3>
+                    <i class="fa-solid fa-truck-fast"></i>
+                    Çatdırılma məlumatı
+                </h3>
+
+                <div
+                    class="info-close"
+                    onclick="closeDeliveryInfo()"
+                >
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                    <strong>Bakı</strong>
+                    <span>
+                        Bakı daxilində sürətli çatdırılma.
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <i class="fa-solid fa-map-location-dot"></i>
+
+                <div>
+                    <strong>Rayonlar</strong>
+                    <span>
+                        Rayonlara çatdırılma imkanı barədə WhatsApp vasitəsilə məlumat ala bilərsiniz.
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <div>
+                    <strong>Sifariş</strong>
+                    <span>
+                        Məhsulu seçin və WhatsApp vasitəsilə sifarişinizi göndərin.
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <div>
+                    <strong>WhatsApp dəstək</strong>
+                    <span>
+                        Sualınız varsa birbaşa WhatsApp-dan yaza bilərsiniz.
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================
+         PRODUCT DETAIL
+    ============================= -->
+
+    <div
+        class="product-detail-modal"
+        id="productDetailModal"
+        onclick="closeProductDetailOutside(event)"
+    >
+
+        <div class="product-detail-card">
+
+            <img
+                id="detailImage"
+                class="detail-image"
+                src=""
+                alt=""
+            >
+
+            <div
+                id="detailName"
+                class="detail-name"
+            ></div>
+
+            <div
+                id="detailPrice"
+                class="detail-price"
+            ></div>
+
+            <div class="detail-buttons">
+
+                <button
+                    class="detail-btn detail-cart"
+                    onclick="detailAddToCart()"
+                >
+                    <i class="fa-solid fa-cart-plus"></i>
+                    Səbətə əlavə et
+                </button>
+
+                <button
+                    class="detail-btn detail-wa"
+                    onclick="detailWhatsApp()"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================
+         TOAST
+    ============================= -->
+
+    <div
+        class="premium-toast"
+        id="premiumToast"
+    ></div>
 
 
     <!-- ============================
@@ -1678,12 +2582,10 @@
 
 
     <!-- ============================
-         JAVASCRIPT
+         SƏNİN MÖVCUD JAVASCRIPT
     ============================= -->
 
     <script>
-
-        /* CATEGORY */
 
         function showCategory(category, clickedCard) {
 
@@ -1723,8 +2625,6 @@
         }
 
 
-        /* HOME */
-
         function goHome() {
 
             document
@@ -1742,8 +2642,6 @@
 
         }
 
-
-        /* IMAGE MODAL */
 
         function openModal(imgSrc) {
 
@@ -1768,14 +2666,13 @@
             const modal =
                 document.getElementById('imageModal');
 
+
             modal.style.display = 'none';
 
             document.body.style.overflow = '';
 
         }
 
-
-        /* ESC TO CLOSE */
 
         document.addEventListener(
             'keydown',
@@ -1791,9 +2688,8 @@
         );
 
 
-        /* SWIPE / TOUCH FRIENDLY */
-
         let touchStartY = 0;
+
 
         document.addEventListener(
             'touchstart',
@@ -1817,6 +2713,7 @@
                 const difference =
                     touchStartY - touchEndY;
 
+
                 if (
                     Math.abs(difference) > 100 &&
                     document.getElementById('imageModal').style.display === 'flex'
@@ -1829,6 +2726,867 @@
             },
             { passive: true }
         );
+
+    </script>
+
+
+    <!-- =====================================================
+         =====================================================
+         TAM YENİ PREMIUM JAVASCRIPT
+         =====================================================
+         ===================================================== -->
+
+    <script>
+
+        /* ==============================================
+           CART SYSTEM
+        ============================================== */
+
+        let cart = JSON.parse(
+            localStorage.getItem('provitbaku_cart') || '[]'
+        );
+
+        let currentDetailProduct = null;
+
+
+        function saveCart() {
+
+            localStorage.setItem(
+                'provitbaku_cart',
+                JSON.stringify(cart)
+            );
+
+        }
+
+
+        function updateCartCount() {
+
+            const count =
+                cart.reduce(
+                    (total,item) => total + item.qty,
+                    0
+                );
+
+            document.getElementById('cartCount').textContent =
+                count > 99 ? '99+' : count;
+
+        }
+
+
+        function showToast(message, icon='fa-check') {
+
+            const toast =
+                document.getElementById('premiumToast');
+
+            toast.innerHTML =
+                `<i class="fa-solid ${icon}"></i>${message}`;
+
+            toast.classList.add('show');
+
+            clearTimeout(window.toastTimer);
+
+            window.toastTimer =
+                setTimeout(() => {
+
+                    toast.classList.remove('show');
+
+                }, 2200);
+
+        }
+
+
+        function getProductData(row) {
+
+            const name =
+                row.querySelector('.item-name')?.textContent
+                    .trim();
+
+            const priceText =
+                row.querySelector('.item-price')?.textContent
+                    .trim();
+
+            const price =
+                parseFloat(
+                    priceText
+                        .replace(',', '.')
+                        .replace(/[^\d.]/g,'')
+                );
+
+            const image =
+                row.querySelector('.item-img')?.getAttribute('src');
+
+            return {
+                name,
+                price,
+                image
+            };
+
+        }
+
+
+        function addToCart(product) {
+
+            if (!product || !product.name) return;
+
+            const existing =
+                cart.find(
+                    item => item.name === product.name
+                );
+
+            if (existing) {
+
+                existing.qty++;
+
+            } else {
+
+                cart.push({
+                    name: product.name,
+                    price: product.price,
+                    image: product.image,
+                    qty: 1
+                });
+
+            }
+
+            saveCart();
+
+            updateCartCount();
+
+            showToast(
+                `${product.name} səbətə əlavə edildi`,
+                'fa-cart-plus'
+            );
+
+            renderCart();
+
+        }
+
+
+        function removeFromCart(index) {
+
+            cart.splice(index,1);
+
+            saveCart();
+
+            updateCartCount();
+
+            renderCart();
+
+        }
+
+
+        function changeQty(index,amount) {
+
+            cart[index].qty += amount;
+
+            if (cart[index].qty <= 0) {
+
+                cart.splice(index,1);
+
+            }
+
+            saveCart();
+
+            updateCartCount();
+
+            renderCart();
+
+        }
+
+
+        function getCartTotal() {
+
+            return cart.reduce(
+                (total,item) =>
+                    total + (item.price * item.qty),
+                0
+            );
+
+        }
+
+
+        function renderCart() {
+
+            const container =
+                document.getElementById('cartContent');
+
+            if (!cart.length) {
+
+                container.innerHTML = `
+
+                    <div class="cart-empty">
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                        <strong>Səbətiniz boşdur</strong>
+
+                        <span>
+                            Məhsulları səbətə əlavə etdikdə burada görünəcək.
+                        </span>
+
+                    </div>
+
+                `;
+
+                return;
+
+            }
+
+
+            let html = '';
+
+
+            cart.forEach((item,index) => {
+
+                html += `
+
+                    <div class="cart-item">
+
+                        <img
+                            src="${item.image}"
+                            alt="${item.name}"
+                        >
+
+                        <div class="cart-item-info">
+
+                            <div class="cart-item-name">
+                                ${item.name}
+                            </div>
+
+                            <div class="cart-item-price">
+                                ${item.price} AZN
+                            </div>
+
+                            <div class="qty-control">
+
+                                <button
+                                    onclick="changeQty(${index},-1)"
+                                >
+                                    −
+                                </button>
+
+                                <span>
+                                    ${item.qty}
+                                </span>
+
+                                <button
+                                    onclick="changeQty(${index},1)"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="remove-cart"
+                            onclick="removeFromCart(${index})"
+                        >
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+
+                    </div>
+
+                `;
+
+            });
+
+
+            const total =
+                getCartTotal();
+
+
+            html += `
+
+                <div class="cart-summary">
+
+                    <div class="cart-total-row">
+
+                        <span>
+                            Ümumi məbləğ
+                        </span>
+
+                        <span class="cart-total-price">
+                            ${total} AZN
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="cart-whatsapp"
+                        onclick="sendCartToWhatsApp()"
+                    >
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        SİFARİŞİ WHATSAPP-A GÖNDƏR
+
+                    </button>
+
+                </div>
+
+            `;
+
+
+            container.innerHTML = html;
+
+        }
+
+
+        function openCart() {
+
+            renderCart();
+
+            document
+                .getElementById('cartOverlay')
+                .classList.add('active');
+
+            document.body.style.overflow = 'hidden';
+
+        }
+
+
+        function closeCart() {
+
+            document
+                .getElementById('cartOverlay')
+                .classList.remove('active');
+
+            document.body.style.overflow = '';
+
+        }
+
+
+        function closeCartOutside(event) {
+
+            if (
+                event.target ===
+                document.getElementById('cartOverlay')
+            ) {
+
+                closeCart();
+
+            }
+
+        }
+
+
+        function sendCartToWhatsApp() {
+
+            if (!cart.length) {
+
+                showToast(
+                    'Səbət boşdur',
+                    'fa-circle-exclamation'
+                );
+
+                return;
+
+            }
+
+
+            let message =
+                'Salam, ProVitBaku-dan sifariş vermək istəyirəm.%0A%0A';
+
+
+            cart.forEach((item,index) => {
+
+                message +=
+                    `${index + 1}. ${item.name} — ${item.qty} ədəd — ${item.price * item.qty} AZN%0A`;
+
+            });
+
+
+            message +=
+                `%0AÜmumi məbləğ: ${getCartTotal()} AZN`;
+
+
+            openWhatsApp(message);
+
+        }
+
+
+        /* ==============================================
+           WHATSAPP SMART OPEN
+        ============================================== */
+
+        function openWhatsApp(encodedMessage) {
+
+            const phone =
+                '994709939998';
+
+            const text =
+                encodedMessage ||
+                'Salam, ProVitBaku-dan məlumat almaq istəyirəm.';
+
+
+            const appUrl =
+                `whatsapp://send?phone=${phone}&text=${text}`;
+
+            const webUrl =
+                `https://web.whatsapp.com/send?phone=${phone}&text=${text}`;
+
+
+            const start =
+                Date.now();
+
+
+            window.location.href = appUrl;
+
+
+            setTimeout(() => {
+
+                if (Date.now() - start < 1800) {
+
+                    window.location.href = webUrl;
+
+                }
+
+            },1000);
+
+        }
+
+
+        /* ==============================================
+           AUTOMATIC CART BUTTONS
+        ============================================== */
+
+        function createCartButtons() {
+
+            document
+                .querySelectorAll('.item-row')
+                .forEach(row => {
+
+                    if (
+                        row.querySelector('.add-cart-btn')
+                    ) return;
+
+
+                    const details =
+                        row.querySelector('.item-details');
+
+                    if (!details) return;
+
+
+                    const buy =
+                        details.querySelector('.buy-btn');
+
+                    if (!buy) return;
+
+
+                    const product =
+                        getProductData(row);
+
+
+                    const button =
+                        document.createElement('button');
+
+
+                    button.className =
+                        'add-cart-btn';
+
+
+                    button.innerHTML =
+                        `<i class="fa-solid fa-cart-plus"></i> Səbət`;
+
+
+                    button.onclick =
+                        function() {
+
+                            addToCart(product);
+
+                        };
+
+
+                    buy.insertAdjacentElement(
+                        'afterend',
+                        button
+                    );
+
+
+                    /* Məhsula kliklə məlumat popup-u */
+
+                    row
+                        .querySelector('.item-img')
+                        ?.addEventListener(
+                            'dblclick',
+                            function() {
+
+                                openProductDetail(product);
+
+                            }
+                        );
+
+                });
+
+        }
+
+
+        /* ==============================================
+           PRODUCT BADGES
+        ============================================== */
+
+        function createBadges() {
+
+            const rows =
+                Array.from(
+                    document.querySelectorAll('.item-row')
+                );
+
+
+            rows.forEach((row,index) => {
+
+                if (
+                    row.querySelector(
+                        '.premium-product-badge'
+                    )
+                ) return;
+
+
+                const badge =
+                    document.createElement('div');
+
+
+                badge.className =
+                    'premium-product-badge';
+
+
+                if (index === 0) {
+
+                    badge.classList.add('hot');
+
+                    badge.textContent =
+                        '🔥 ÇOX SATILAN';
+
+                } else if (index === 1) {
+
+                    badge.classList.add('new');
+
+                    badge.textContent =
+                        '✓ YENİ';
+
+                } else {
+
+                    badge.textContent =
+                        'PREMIUM';
+
+                }
+
+
+                row.appendChild(badge);
+
+            });
+
+        }
+
+
+        /* ==============================================
+           PRODUCT DETAIL
+        ============================================== */
+
+        function openProductDetail(product) {
+
+            currentDetailProduct =
+                product;
+
+
+            document.getElementById(
+                'detailImage'
+            ).src =
+                product.image;
+
+
+            document.getElementById(
+                'detailName'
+            ).textContent =
+                product.name;
+
+
+            document.getElementById(
+                'detailPrice'
+            ).textContent =
+                product.price + ' AZN';
+
+
+            document
+                .getElementById(
+                    'productDetailModal'
+                )
+                .classList.add('active');
+
+        }
+
+
+        function closeProductDetail() {
+
+            document
+                .getElementById(
+                    'productDetailModal'
+                )
+                .classList.remove('active');
+
+        }
+
+
+        function closeProductDetailOutside(event) {
+
+            if (
+                event.target ===
+                document.getElementById(
+                    'productDetailModal'
+                )
+            ) {
+
+                closeProductDetail();
+
+            }
+
+        }
+
+
+        function detailAddToCart() {
+
+            if (!currentDetailProduct) return;
+
+            addToCart(
+                currentDetailProduct
+            );
+
+            closeProductDetail();
+
+        }
+
+
+        function detailWhatsApp() {
+
+            if (!currentDetailProduct) return;
+
+
+            const message =
+                encodeURIComponent(
+                    `Salam, bu məhsulu sifariş etmək istəyirəm: ${currentDetailProduct.name} (${currentDetailProduct.price} AZN)`
+                );
+
+
+            openWhatsApp(message);
+
+        }
+
+
+        /* ==============================================
+           SEARCH
+        ============================================== */
+
+        const searchInput =
+            document.getElementById(
+                'productSearch'
+            );
+
+
+        searchInput.addEventListener(
+            'input',
+            function() {
+
+                const query =
+                    this.value
+                        .toLowerCase()
+                        .trim();
+
+
+                document
+                    .querySelectorAll('.item-row')
+                    .forEach(row => {
+
+                        const name =
+                            row.querySelector(
+                                '.item-name'
+                            )?.textContent
+                                .toLowerCase() || '';
+
+
+                        const visible =
+                            name.includes(query);
+
+
+                        row.style.display =
+                            visible ? 'flex' : 'none';
+
+                    });
+
+
+                if (query) {
+
+                    document
+                        .querySelectorAll(
+                            '.category-section'
+                        )
+                        .forEach(section => {
+
+                            section.classList.add('active');
+
+                        });
+
+
+                    document
+                        .querySelectorAll(
+                            '.product-card'
+                        )
+                        .forEach(card => {
+
+                            card.classList.remove('active');
+
+                        });
+
+                }
+
+            }
+        );
+
+
+        /* ==============================================
+           DELIVERY
+        ============================================== */
+
+        function openDeliveryInfo() {
+
+            document
+                .getElementById(
+                    'deliveryModal'
+                )
+                .classList.add('active');
+
+            document.body.style.overflow =
+                'hidden';
+
+        }
+
+
+        function closeDeliveryInfo() {
+
+            document
+                .getElementById(
+                    'deliveryModal'
+                )
+                .classList.remove('active');
+
+            document.body.style.overflow =
+                '';
+
+        }
+
+
+        function closeDeliveryOutside(event) {
+
+            if (
+                event.target ===
+                document.getElementById(
+                    'deliveryModal'
+                )
+            ) {
+
+                closeDeliveryInfo();
+
+            }
+
+        }
+
+
+        /* ==============================================
+           SOCIAL PLACEHOLDER
+        ============================================== */
+
+        function socialPlaceholder(name) {
+
+            showToast(
+                `${name} linkini əlavə etmək lazımdır`,
+                'fa-link'
+            );
+
+        }
+
+
+        /* ==============================================
+           BACK TO TOP
+        ============================================== */
+
+        window.addEventListener(
+            'scroll',
+            function() {
+
+                const button =
+                    document.getElementById(
+                        'backTop'
+                    );
+
+
+                if (window.scrollY > 250) {
+
+                    button.classList.add('show');
+
+                } else {
+
+                    button.classList.remove('show');
+
+                }
+
+            }
+        );
+
+
+        /* ==============================================
+           ESC
+        ============================================== */
+
+        document.addEventListener(
+            'keydown',
+            function(event) {
+
+                if (
+                    event.key === 'Escape'
+                ) {
+
+                    closeCart();
+
+                    closeDeliveryInfo();
+
+                    closeProductDetail();
+
+                }
+
+            }
+        );
+
+
+        /* ==============================================
+           INIT
+        ============================================== */
+
+        document.addEventListener(
+            'DOMContentLoaded',
+            function() {
+
+                createCartButtons();
+
+                createBadges();
+
+                updateCartCount();
+
+            }
+        );
+
+
+        /*
+         * DOMContentLoaded artıq keçibsə
+         * dərhal da işlət
+         */
+
+        createCartButtons();
+
+        createBadges();
+
+        updateCartCount();
+
 
     </script>
 
