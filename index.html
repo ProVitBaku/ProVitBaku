@@ -141,7 +141,7 @@
             color: #f1f1f1;
         }
 
-        /* Məhsullar Siyahısı Bölməsi (Əvvəlcə gizli olur) */
+        /* Məhsullar Siyahısı Bölməsi - Əvvəlcə gizlidir (display: none) */
         .category-section {
             display: none;
             animation: fadeIn 0.4s ease-in-out;
@@ -175,6 +175,10 @@
             color: #aaa;
             cursor: pointer;
             font-weight: normal;
+        }
+
+        .back-text:hover {
+            color: #fff;
         }
 
         .items-container {
@@ -457,16 +461,16 @@
 
     <script>
         function showCategory(category) {
-            // Bütün bölmələri gizlət
+            // Bütün məhsul bölmələrini gizlət və əsas səhifə blokunu gizlət
             document.querySelectorAll('.category-section').forEach(sec => sec.classList.remove('active'));
             document.getElementById('home-content').style.display = 'none';
 
-            // Seçilən kateqoriyanı göstər
+            // Yalnız seçilən kateqoriyanı göstər
             document.getElementById(category + '-section').classList.add('active');
         }
 
         function goHome() {
-            // Bütün kateqoriyaları bağla, əsas səhifəni və ümumi düyməni aç
+            // Məhsul bölmələrini bağla, əsas səhifəni yenidən aç
             document.querySelectorAll('.category-section').forEach(sec => sec.classList.remove('active'));
             document.getElementById('home-content').style.display = 'block';
         }
